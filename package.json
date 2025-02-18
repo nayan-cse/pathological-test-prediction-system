@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.1",
+    "dotenv": "^16.4.7",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.12.0",
     "next": "15.1.7",
     "pathological-test-prediction": "file:",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
