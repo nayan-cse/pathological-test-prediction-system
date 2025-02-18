@@ -44,3 +44,44 @@
 {"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-18T19:29:47.175Z"}
 {"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-18T19:29:53.959Z"}
 {"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-18T19:29:57.174Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-18T19:35:45.394Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T19:48:34.418Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T19:53:03.364Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T20:08:18.408Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T20:09:39.867Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T20:09:43.259Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T20:10:16.498Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T20:10:23.537Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T20:12:27.313Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T20:12:28.727Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T20:12:28.775Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T20:14:35.139Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T20:15:05.855Z"}
+{"level":"error","message":"Error verifying token: invalid signature","timestamp":"2025-02-18T20:17:12.001Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T20:26:32.456Z"}
+{"level":"error","message":"Error verifying token: invalid signature","timestamp":"2025-02-18T20:26:34.948Z"}
+{"level":"error","message":"Error verifying token: invalid signature","timestamp":"2025-02-18T20:26:35.028Z"}
+{"level":"error","message":"Logout failed: jwt expired","timestamp":"2025-02-18T20:28:37.055Z"}
+{"level":"error","message":"Logout failed: invalid signature","timestamp":"2025-02-18T20:28:58.487Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T20:31:40.791Z"}
+{"level":"error","message":"Error verifying token: invalid signature","timestamp":"2025-02-18T20:32:14.655Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T20:34:19.351Z"}
+{"level":"error","message":"Error verifying token: invalid signature","timestamp":"2025-02-18T20:36:33.324Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T20:37:02.661Z"}
+{"level":"error","message":"Error verifying token: jwt malformed","timestamp":"2025-02-18T20:37:03.892Z"}
+{"level":"error","message":"Error verifying token: jwt malformed","timestamp":"2025-02-18T20:37:03.944Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T20:37:47.853Z"}
+{"level":"error","message":"Error verifying token: jwt malformed","timestamp":"2025-02-18T20:38:03.006Z"}
+{"level":"error","message":"Error verifying token: jwt malformed","timestamp":"2025-02-18T20:41:12.426Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T20:42:41.653Z"}
+{"level":"error","message":"Error verifying token: jwt malformed","timestamp":"2025-02-18T20:42:43.460Z"}
+{"level":"error","message":"Error verifying token: jwt malformed","timestamp":"2025-02-18T20:42:43.708Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T20:46:09.376Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T20:46:10.446Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T20:46:10.645Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T20:48:34.351Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T20:57:34.396Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T20:57:59.265Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T20:57:59.488Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T20:57:59.542Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T20:58:08.082Z"}

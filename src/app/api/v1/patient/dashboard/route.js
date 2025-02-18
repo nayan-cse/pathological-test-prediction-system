@@ -56,7 +56,6 @@ const JWT_SECRET = process.env.JWT_SECRET;
 
 export async function GET(req) {
     const token = req.headers.get('authorization') ? .split(' ')[1] || req.cookies.get('accessToken');
-
     // Check if the token exists
     if (!token) {
         logger.warn('Access denied: User is not logged in');
