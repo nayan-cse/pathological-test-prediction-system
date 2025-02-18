@@ -36,3 +36,8 @@
 {"level":"warn","message":"Access denied: User with role patient tried to access doctor dashboard","timestamp":"2025-02-18T19:21:38.498Z"}
 {"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:23:52.988Z"}
 {"level":"warn","message":"Access denied: User with role patient tried to access doctor dashboard","timestamp":"2025-02-18T19:23:52.995Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T19:24:13.198Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = doctor","timestamp":"2025-02-18T19:24:45.803Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T19:28:13.852Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-18T19:29:15.757Z"}
+{"level":"error","message":"Error verifying token: Unknown column 'user_id' in 'where clause'","timestamp":"2025-02-18T19:29:16.245Z"}
