@@ -32,3 +32,7 @@
 {"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:17:08.913Z"}
 {"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:18:02.291Z"}
 {"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:20:36.044Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:21:38.494Z"}
+{"level":"warn","message":"Access denied: User with role patient tried to access doctor dashboard","timestamp":"2025-02-18T19:21:38.498Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:23:52.988Z"}
+{"level":"warn","message":"Access denied: User with role patient tried to access doctor dashboard","timestamp":"2025-02-18T19:23:52.995Z"}
