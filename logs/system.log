@@ -1,0 +1,34 @@
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T18:30:02.010Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T18:30:10.337Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T18:30:12.347Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T18:30:14.350Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T18:30:16.402Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T18:30:18.753Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T18:40:00.307Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T18:40:49.887Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T18:41:14.162Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T18:45:43.067Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T18:47:42.531Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T18:54:42.432Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T18:54:46.843Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T18:54:49.572Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T19:01:18.792Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T19:03:12.217Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T19:03:43.353Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T19:03:49.886Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T19:04:49.596Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T19:05:13.319Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T19:07:05.208Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-18T19:09:13.317Z"}
+{"level":"warn","message":"Access denied: User is not logged in","timestamp":"2025-02-18T19:10:40.132Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:13:20.615Z"}
+{"level":"warn","message":"Access denied: User with role patient tried to access patient dashboard","timestamp":"2025-02-18T19:13:20.619Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:15:22.874Z"}
+{"level":"warn","message":"Access denied: User with role patient tried to access patient dashboard","timestamp":"2025-02-18T19:15:22.878Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:16:19.417Z"}
+{"level":"error","message":"Error verifying token: Table 'pathological_test.patients' doesn't exist","timestamp":"2025-02-18T19:16:19.711Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:16:52.968Z"}
+{"level":"error","message":"Error verifying token: Unknown column 'user_id' in 'where clause'","timestamp":"2025-02-18T19:16:53.031Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:17:08.913Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:18:02.291Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-18T19:20:36.044Z"}
