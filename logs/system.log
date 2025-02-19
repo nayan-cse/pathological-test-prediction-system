@@ -291,3 +291,6 @@
 {"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T16:45:45.363Z"}
 {"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:45:48.378Z"}
 {"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:45:48.450Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T16:45:54.552Z"}
+{"level":"info","message":"Nayan Malakar has jane.doe2@example.com registered successfully","timestamp":"2025-02-19T17:07:32.065Z"}
+{"level":"info","message":"User jane.doe2@example.com logged in successfully","timestamp":"2025-02-19T17:07:44.036Z"}
