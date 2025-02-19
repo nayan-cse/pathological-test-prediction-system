@@ -2,7 +2,8 @@ import "./globals.css";
 import { AuthProvider } from "./context/AuthContext";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import { ToastContainer } from "react-toastify"; // Import ToastContainer
+import "react-toastify/dist/ReactToastify.css"; // Make sure the Toastify CSS is imported globally
 
 export default function RootLayout({ children }) {
     return ( <
@@ -15,8 +16,10 @@ export default function RootLayout({ children }) {
         Navbar / > { children } <
         Footer / >
         <
-        /AuthProvider> < /
-        body > <
+        ToastContainer / >
+        <
+        /AuthProvider> <
+        /body> <
         /html>
     );
 }
