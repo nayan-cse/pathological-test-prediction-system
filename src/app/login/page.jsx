@@ -8,7 +8,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
-  const router = useRouter(); // Initialize router for navigation
+  const router = useRouter();
 
   // Handle login submit
   const handleSubmit = async (e) => {

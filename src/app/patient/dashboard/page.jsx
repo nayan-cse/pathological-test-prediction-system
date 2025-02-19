@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useRouter } from "next/navigation"; // Import useRouter for redirection
-import { ClipLoader } from "react-spinners"; // Import the spinner
+import { useRouter } from "next/navigation";
+import { ClipLoader } from "react-spinners";
+import LogoutButton from "@/app/components/logoutButton";
 
 const PatientDashboard = () => {
   const [loading, setLoading] = useState(true);
@@ -47,12 +48,6 @@ const PatientDashboard = () => {
         router.push("/login"); // Redirect to the login page
       }
     }
-  };
-
-  // Logout function to clear the token and redirect to the login page
-  const handleLogout = () => {
-    localStorage.removeItem("accessToken"); // Remove the token from localStorage
-    router.push("/login"); // Redirect to login page
   };
 
   useEffect(() => {
@@ -104,8 +99,6 @@ const PatientDashboard = () => {
                 </p>
               </div>
             </div>
-
-            {/* You can add more patient-specific details here */}
             <div>
               <h2 className="text-xl font-medium text-gray-700">
                 Medical History
@@ -122,16 +115,7 @@ const PatientDashboard = () => {
             </div>
           </div>
         </div>
-
-        {/* Logout button */}
-        <div className="text-center mt-6">
-          <button
-            onClick={handleLogout}
-            className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition"
-          >
-            Logout
-          </button>
-        </div>
+        <LogoutButton />
       </div>
     </div>
   );
