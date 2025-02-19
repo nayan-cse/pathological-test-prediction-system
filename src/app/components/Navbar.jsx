@@ -28,18 +28,25 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <Link
-                  href="/patient/previous-report"
-                  className="text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Register
-                </Link>
-                <Link
-                  href="/login"
-                  className="text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Login
-                </Link>
+                {/* Display Register and Login only when no user is logged in */}
+                {!user && (
+                  <>
+                    <Link
+                      href="/register"
+                      className="text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Register
+                    </Link>
+                    <Link
+                      href="/login"
+                      className="text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Login
+                    </Link>
+                  </>
+                )}
+
+                {/* Show the appropriate links based on user role */}
                 {user?.role === "patient" && (
                   <>
                     <Link
@@ -109,6 +116,7 @@ const Navbar = () => {
                   </>
                 )}
 
+                {/* Show the Logout button if the user is logged in */}
                 {user && (
                   <button
                     onClick={handleLogout}

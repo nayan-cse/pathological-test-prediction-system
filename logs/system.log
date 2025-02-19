@@ -294,3 +294,7 @@
 {"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T16:45:54.552Z"}
 {"level":"info","message":"Nayan Malakar has jane.doe2@example.com registered successfully","timestamp":"2025-02-19T17:07:32.065Z"}
 {"level":"info","message":"User jane.doe2@example.com logged in successfully","timestamp":"2025-02-19T17:07:44.036Z"}
+{"level":"info","message":"Decoded Token: ID = 2, Role = patient","timestamp":"2025-02-19T17:07:46.696Z"}
+{"level":"info","message":"Decoded Token: ID = 2, Role = patient","timestamp":"2025-02-19T17:07:46.767Z"}
+{"level":"info","message":"Decoded Token: ID = 2, Role = patient","timestamp":"2025-02-19T17:12:34.170Z"}
+{"level":"info","message":"Decoded Token: ID = 2, Role = patient","timestamp":"2025-02-19T17:12:34.542Z"}
