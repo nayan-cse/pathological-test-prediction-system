@@ -16,7 +16,8 @@ const LogoutButton = () => {
       if (!token) {
         // If no token is found, log the user out automatically
         toast.info("No token found. Logging you out.");
-        localStorage.removeItem("accessToken"); // Ensure token is removed from localStorage
+        localStorage.removeItem("accessToken");
+        localStorage.removeItem("role");
         router.push("/login"); // Redirect to login page
         return;
       }
@@ -49,14 +50,14 @@ const LogoutButton = () => {
   };
 
   return (
-    <div className="text-center mt-6">
+    <>
       <button
         onClick={handleLogout}
-        className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition"
+        className="text-white px-3 py-2 rounded-md text-sm font-medium"
       >
         Logout
       </button>
-    </div>
+    </>
   );
 };
 

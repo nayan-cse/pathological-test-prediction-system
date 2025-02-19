@@ -106,10 +106,9 @@ const PatientDashboard = () => {
               <div className="mt-2">
                 <p className="text-gray-600">
                   <strong>Last Appointment:</strong>{" "}
-                  {patientData.last_appointment}
                 </p>
                 <p className="text-gray-600">
-                  <strong>Doctor's Notes:</strong> {patientData.doctor_notes}
+                  <strong>Doctor's Notes:</strong>
                 </p>
               </div>
             </div>

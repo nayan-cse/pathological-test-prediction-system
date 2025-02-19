@@ -24,3 +24,270 @@
 {"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-19T04:52:46.766Z"}
 {"level":"info","message":"Decoded Token: ID = 1, Role = patient","timestamp":"2025-02-19T04:52:46.871Z"}
 {"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T04:52:51.147Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email john1.doe@example.com","timestamp":"2025-02-19T04:59:58.351Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email john1.doe@example.com","timestamp":"2025-02-19T05:00:21.972Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email john1.doe@example.com","timestamp":"2025-02-19T05:00:24.961Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T05:00:35.985Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = doctor","timestamp":"2025-02-19T05:00:47.613Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = doctor","timestamp":"2025-02-19T05:00:47.705Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = doctor","timestamp":"2025-02-19T05:03:02.010Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = doctor","timestamp":"2025-02-19T05:03:11.383Z"}
+{"level":"warn","message":"Access denied: User with role doctor tried to access patient dashboard","timestamp":"2025-02-19T05:03:11.388Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = doctor","timestamp":"2025-02-19T05:03:29.017Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = doctor","timestamp":"2025-02-19T05:05:20.735Z"}
+{"level":"warn","message":"Access denied: User with role doctor tried to access patient dashboard","timestamp":"2025-02-19T05:05:20.735Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = doctor","timestamp":"2025-02-19T05:18:14.381Z"}
+{"level":"warn","message":"Access denied: User with role doctor tried to access patient dashboard","timestamp":"2025-02-19T05:18:14.388Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = doctor","timestamp":"2025-02-19T05:22:24.508Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = doctor","timestamp":"2025-02-19T05:22:41.958Z"}
+{"level":"warn","message":"Access denied: User with role doctor tried to access patient dashboard","timestamp":"2025-02-19T05:22:41.965Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = doctor","timestamp":"2025-02-19T05:23:50.449Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T05:24:00.743Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T05:28:40.734Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T05:28:44.333Z"}
+{"level":"warn","message":"Access denied: User with role admin tried to access doctor dashboard","timestamp":"2025-02-19T05:28:44.340Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T05:28:44.401Z"}
+{"level":"warn","message":"Access denied: User with role admin tried to access doctor dashboard","timestamp":"2025-02-19T05:28:44.407Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T05:30:42.486Z"}
+{"level":"warn","message":"Access denied: User with role admin tried to access doctor dashboard","timestamp":"2025-02-19T05:30:42.491Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T05:32:44.848Z"}
+{"level":"warn","message":"Access denied: User with role admin tried to access doctor dashboard","timestamp":"2025-02-19T05:32:44.852Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T05:34:11.290Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T05:34:20.750Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T05:59:49.472Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T05:59:50.777Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T05:59:50.895Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T05:59:55.560Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T06:03:47.855Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:03:49.919Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:03:49.979Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:07:18.405Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:07:19.079Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:08:15.081Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:08:15.199Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:18:39.030Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T06:19:39.410Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T06:19:39.448Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T06:20:20.487Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:20:23.798Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:20:23.893Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T06:22:33.409Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T06:22:33.449Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T06:22:33.458Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T06:38:17.464Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email john1.doe@example.com","timestamp":"2025-02-19T06:47:22.344Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email john1.doe@example.com","timestamp":"2025-02-19T06:47:34.736Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T06:47:53.645Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:47:56.370Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:47:56.504Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T06:49:30.532Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T06:49:48.743Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:49:50.499Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:49:50.575Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:54:12.592Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:54:13.211Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T06:55:01.713Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T06:57:50.123Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:57:57.755Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T06:57:57.987Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T06:58:17.498Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T07:06:35.257Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:06:38.993Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:06:39.169Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:09:52.248Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:09:53.012Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:09:56.498Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:09:56.518Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T07:10:26.658Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T07:10:44.988Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:10:45.802Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:10:47.539Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:11:12.887Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:11:13.234Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:11:17.526Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:11:17.659Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T07:11:19.801Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T07:11:28.140Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:11:28.290Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:11:28.327Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:12:12.515Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:12:12.659Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T07:12:46.379Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T07:12:55.192Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:12:55.329Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:12:55.380Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:18:27.444Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:18:27.867Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T07:18:40.401Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T07:18:50.317Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:18:50.514Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:18:50.553Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:18:59.584Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:18:59.612Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:20:23.214Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:20:24.117Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T07:20:34.466Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T07:21:22.582Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:21:22.852Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:21:22.888Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:21:26.238Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:21:26.276Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T07:21:27.927Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T07:25:42.946Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T07:27:19.666Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T07:27:19.674Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T07:32:01.242Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:32:12.735Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:32:12.919Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:32:31.950Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:32:31.984Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T07:32:39.250Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T07:32:57.426Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:32:57.539Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:32:57.577Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:43:18.467Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:43:18.534Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:52:57.178Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:53:03.428Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:53:03.640Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:53:50.204Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:53:50.412Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:54:36.252Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T07:54:36.469Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:02:33.217Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:02:34.774Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:02:34.806Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:02:46.808Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:02:46.841Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:05:01.657Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:05:01.799Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:05:36.819Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:05:36.990Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:07:41.978Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:07:42.026Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:08:15.635Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T08:08:15.699Z"}
+{"level":"error","message":"Error verifying token: jwt expired","timestamp":"2025-02-19T15:16:59.977Z"}
+{"level":"error","message":"Error verifying token: jwt expired","timestamp":"2025-02-19T15:17:00.034Z"}
+{"level":"error","message":"Login error: Access denied for user 'root'@'localhost' (using password: NO)","timestamp":"2025-02-19T15:17:35.389Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:18:51.313Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:18:56.036Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:18:56.198Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:21:29.976Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:21:30.753Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:27:02.154Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:27:02.722Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:27:09.145Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:27:09.165Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:27:58.117Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:27:58.248Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:28:22.686Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:28:22.897Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:28:22.961Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:28:34.933Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:28:35.057Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:28:46.555Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:28:46.654Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:29:00.064Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:29:00.156Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:29:00.180Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:29:20.482Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:29:20.516Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:30:00.716Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:30:00.792Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:30:26.924Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:30:27.382Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:30:27.399Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:33:36.083Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:33:36.223Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:34:21.622Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:34:21.935Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:34:21.978Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:34:55.862Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:34:56.149Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:37:55.370Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:37:55.655Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:39:02.790Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:40:08.041Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:40:09.147Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:40:09.189Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:40:40.432Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:40:40.485Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:43:14.836Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:43:15.019Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T15:43:20.528Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:44:13.284Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:44:13.734Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:44:13.775Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:44:18.798Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:44:19.056Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T15:44:21.052Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:49:22.870Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:49:24.280Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:49:24.354Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:49:28.160Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:49:28.187Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T15:49:35.182Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:51:04.841Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:51:05.534Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:51:05.597Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:51:09.293Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:51:09.323Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T15:51:11.749Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:52:24.415Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:52:25.836Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:52:25.907Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:52:32.870Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:52:32.892Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:57:40.657Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:57:42.521Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:57:42.655Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:57:59.503Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:57:59.914Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T15:58:12.169Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T15:59:00.385Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:59:01.315Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T15:59:01.578Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T15:59:13.106Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T15:59:13.124Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email john1.doe@example.com","timestamp":"2025-02-19T16:06:39.375Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T16:07:11.062Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:07:34.679Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:07:35.699Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:08:16.826Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:08:17.234Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T16:08:24.016Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T16:13:09.527Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:13:10.563Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:13:10.686Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T16:13:14.518Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email john1.doe@example.com","timestamp":"2025-02-19T16:13:33.739Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T16:13:44.006Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:13:44.616Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:13:44.650Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T16:13:49.880Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T16:18:11.372Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:18:21.117Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:18:21.248Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T16:18:30.140Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T16:20:36.516Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:20:38.720Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:20:38.794Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T16:20:44.994Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T16:21:08.292Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:21:08.506Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:21:08.527Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T16:21:13.886Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T16:21:24.322Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:21:24.550Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:21:24.574Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:30:57.841Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:30:58.041Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T16:31:01.953Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T16:42:10.001Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:42:12.552Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:42:12.716Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-19T16:42:18.950Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-19T16:45:45.363Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:45:48.378Z"}
+{"level":"info","message":"Decoded Token: ID = 1, Role = admin","timestamp":"2025-02-19T16:45:48.450Z"}
