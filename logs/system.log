@@ -13,3 +13,21 @@
 {"level":"info","message":"Decoded Token: ID = 5, Role = patient","timestamp":"2025-02-19T17:33:44.268Z"}
 {"level":"info","message":"Decoded Token: ID = 5, Role = patient","timestamp":"2025-02-19T17:33:44.312Z"}
 {"level":"info","message":"User ID: 5 logged out successfully","timestamp":"2025-02-19T17:33:47.616Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email nayan.cse.just@gmail.com","timestamp":"2025-02-19T17:34:16.258Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email nayan.cse.just@gmail.com","timestamp":"2025-02-19T17:34:23.900Z"}
+{"level":"info","message":"User nayan.cse.just@gmail.com logged in successfully","timestamp":"2025-02-19T17:35:40.751Z"}
+{"level":"info","message":"Decoded Token: ID = 4, Role = patient","timestamp":"2025-02-19T17:35:41.379Z"}
+{"level":"info","message":"Decoded Token: ID = 4, Role = patient","timestamp":"2025-02-19T17:35:41.429Z"}
+{"level":"info","message":"Decoded Token: ID = 4, Role = patient","timestamp":"2025-02-19T17:35:57.953Z"}
+{"level":"info","message":"Decoded Token: ID = 4, Role = patient","timestamp":"2025-02-19T17:35:57.987Z"}
+{"level":"info","message":"User ID: 4 logged out successfully","timestamp":"2025-02-19T17:35:59.305Z"}
+{"level":"warn","message":"Login failed: User with email jane.doe20@example.com not found","timestamp":"2025-02-24T09:24:53.384Z"}
+{"level":"warn","message":"Login failed: User with email nayanmalakar720@gmail.com not found","timestamp":"2025-02-24T09:25:33.960Z"}
+{"level":"warn","message":"Registration failed: User with email john1.doe@example.com already exists","timestamp":"2025-02-24T09:26:04.243Z"}
+{"level":"warn","message":"Registration failed: User with email 190128.cse@student.just.edu.bd already exists","timestamp":"2025-02-24T09:26:13.606Z"}
+{"level":"info","message":"Nayan Malakar has jane.doe20@example.com registered successfully","timestamp":"2025-02-24T09:26:20.625Z"}
+{"level":"info","message":"User jane.doe20@example.com logged in successfully","timestamp":"2025-02-24T09:26:25.913Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T09:26:28.295Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T09:26:28.410Z"}
+{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-24T09:29:40.941Z"}
+{"level":"info","message":"User jane.doe20@example.com logged in successfully","timestamp":"2025-02-24T09:29:49.772Z"}

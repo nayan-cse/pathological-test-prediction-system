@@ -62,7 +62,7 @@ const Navbar = () => {
                       Pending Report
                     </Link>
                     <Link
-                      href="/patient/make-appointment"
+                      href="/patient/make-report"
                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                       Make an Appointment
