@@ -158,6 +158,7 @@ const symptoms = [
   { name: "Yellow Crust Ooze", bangla: "হলুদ খোলের স্রাব" },
 ];
 
+
 const MakeReport = () => {
   const [selectedSymptoms, setSelectedSymptoms] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -165,6 +166,16 @@ const MakeReport = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [loading, setLoading] = useState(false); // Loading state
   const router = useRouter();
+
+  useEffect(() => {
+    // Check if the user is logged in when the component is mounted
+    const token = localStorage.getItem("accessToken");
+
+    if (!token) {
+      setError("You need to log in to access this page.");
+      router.push("/login"); // Redirect to login page if no token
+    }
+  }, [router]); // Trigger the check once when the component mounts
 
   const handleSelect = (e) => {
     const value = e.target.value;
@@ -223,7 +234,6 @@ const MakeReport = () => {
     }
   };
 
-  // Open modal
   const openModal = () => {
     setIsModalOpen(true);
     setTimeout(() => {
