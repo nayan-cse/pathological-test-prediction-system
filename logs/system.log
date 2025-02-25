@@ -42,3 +42,25 @@
 {"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T18:16:45.572Z"}
 {"level":"info","message":"Fetching test info for user ID: 6","timestamp":"2025-02-25T18:16:45.572Z"}
 {"level":"info","message":"Successfully fetched test info for user ID: 6","timestamp":"2025-02-25T18:16:45.574Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T18:44:57.803Z"}
+{"level":"info","message":"Fetching test info for user ID: 6","timestamp":"2025-02-25T18:44:57.804Z"}
+{"level":"info","message":"Successfully fetched test info for user ID: 6","timestamp":"2025-02-25T18:44:57.805Z"}
+{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-25T18:45:05.150Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-25T18:45:12.810Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T18:45:13.202Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T18:45:13.220Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T18:45:16.121Z"}
+{"level":"info","message":"Fetching test info for user ID: 6","timestamp":"2025-02-25T18:45:16.121Z"}
+{"level":"info","message":"Successfully fetched test info for user ID: 6","timestamp":"2025-02-25T18:45:16.124Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T18:45:16.136Z"}
+{"level":"info","message":"Fetching test info for user ID: 6","timestamp":"2025-02-25T18:45:16.136Z"}
+{"level":"info","message":"Successfully fetched test info for user ID: 6","timestamp":"2025-02-25T18:45:16.138Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T18:48:10.832Z"}
+{"level":"info","message":"Fetching test info for user ID: 6","timestamp":"2025-02-25T18:48:10.833Z"}
+{"level":"info","message":"Successfully fetched test info for user ID: 6","timestamp":"2025-02-25T18:48:10.848Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T18:52:57.505Z"}
+{"level":"info","message":"Fetching test info for user ID: 6","timestamp":"2025-02-25T18:52:57.506Z"}
+{"level":"info","message":"Successfully fetched test info for user ID: 6","timestamp":"2025-02-25T18:52:57.523Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-25T19:14:08.550Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T19:14:09.821Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T19:14:09.858Z"}

@@ -27,7 +27,7 @@ export async function GET(req) {
 
     // Fetch data from the database using user_id (from token)
     logger.info(`Fetching test info for user ID: ${id}`);
-    const queryString = 'SELECT * FROM test_info WHERE user_id = ?';
+    const queryString = 'SELECT symptoms,isApprove,created_at FROM test_info WHERE user_id = ?';
     const results = await query(queryString, [id]);
 
     if (results.length === 0) {
