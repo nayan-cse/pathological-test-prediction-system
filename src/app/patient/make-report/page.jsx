@@ -1,8 +1,10 @@
 "use client";
-
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import React, { useState, useEffect } from "react";
-import { X, Search, AlertCircle } from "lucide-react";
+import { X, Search, AlertCircle, Loader } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Modal from "react-modal";
 
 const symptoms = [
   { name: "Itching", bangla: "চুলকানি" },
@@ -159,8 +161,9 @@ const symptoms = [
 const MakeReport = () => {
   const [selectedSymptoms, setSelectedSymptoms] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [responseData, setResponseData] = useState(null);
   const [error, setError] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [loading, setLoading] = useState(false); // Loading state
   const router = useRouter();
 
   const handleSelect = (e) => {
@@ -186,10 +189,11 @@ const MakeReport = () => {
     
     if (!token) {
       setError("No token found. Please log in again.");
-      setResponseData(null);
       router.push("/login"); // Redirect to the login page
       return;
     }
+
+    setLoading(true); // Start loading spinner
 
     try {
       const response = await fetch("/api/v1/patient/make-report", {
@@ -203,66 +207,34 @@ const MakeReport = () => {
 
       const result = await response.json();
 
+      setLoading(false); // Stop loading spinner
+
       if (response.ok) {
-        setResponseData(result);
         setError(null); // Clear any previous error
+        openModal(); // Open the success modal
       } else {
         setError(result.error);
-        setResponseData(null); 
       }
     } catch (err) {
       console.error("Error during request:", err);
+      setLoading(false); // Stop loading spinner
       setError("An error occurred while making the report.");
-      setResponseData(null); 
-      toast.error(err.message);  // Show the error message
-
-      // Redirect to login in case of any other error (network issue, invalid response, etc.)
-      if (err.message.includes("token") || err.message === "Failed to fetch") {
-        router.push("/login"); // Redirect to the login page
-      }
-    }
-  };
-
-  // Fetch data for GET method (e.g., previous reports or other relevant data)
-  const handleGet = async () => {
-    const token = localStorage.getItem("accessToken"); // Get the JWT token from localStorage
-
-    if (!token) {
-      setError("No token found. Please log in again.");
-      setResponseData(null);
-      router.push("/login"); // Redirect to the login page
-      return;
-    }
-
-    try {
-      const response = await fetch("/api/v1/patient/make-report", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${token}`,  // Send JWT token to the API
-        },
-      });
-
-      const result = await response.json();
-
-      if (response.ok) {
-        setResponseData(result);
-        setError(null); // Clear any previous error
-      } else {
-        setError(result.error);
-        setResponseData(null);
-      }
-    } catch (err) {
-      console.error("Error during request:", err);
-      setError("An error occurred while fetching data.");
-      setResponseData(null);
       toast.error(err.message);  // Show the error message
     }
   };
 
-  useEffect(() => {
-    handleGet(); // Fetch data on component load, if required
-  }, []);
+  // Open modal
+  const openModal = () => {
+    setIsModalOpen(true);
+    setTimeout(() => {
+      closeModal();
+      router.push("/patient/report-history"); // Redirect after 5 seconds
+    }, 5000);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 p-4">
@@ -345,23 +317,41 @@ const MakeReport = () => {
             className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={selectedSymptoms.length === 0}
           >
-            Generate Report
+            {loading ? (
+              <div className="flex justify-center items-center">
+                <Loader className="animate-spin h-5 w-5 mr-2" />
+                Generating Report...
+              </div>
+            ) : (
+              "Generate Report"
+            )}
           </button>
         </div>
 
-        {/* Error or Response */}
+        {/* Error Message */}
         {error && <p className="text-red-600 text-center mt-4">{error}</p>}
-        {responseData && (
-          <div className="mt-6">
-            <h3 className="text-2xl font-bold">Predicted Tests</h3>
-            <ul>
-              {responseData.predicted_tests?.map((test, index) => (
-                <li key={index} className="text-lg">{test}</li>
-              ))}
-            </ul>
-          </div>
-        )}
       </div>
+
+      {/* Modal */}
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        contentLabel="Processing Report"
+        className="modal-overlay"
+        ariaHideApp={false}
+      >
+        <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+          <h2 className="text-xl font-semibold text-gray-800 mb-4">Your report is being reviewed by the doctor.</h2>
+          <div className="mt-4">
+            <button
+              onClick={closeModal}
+              className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg"
+            >
+              Okay
+            </button>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 };

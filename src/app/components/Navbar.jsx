@@ -56,10 +56,10 @@ const Navbar = () => {
                       Previous Report
                     </Link>
                     <Link
-                      href="/patient/pending-report"
+                      href="/patient/report-history"
                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
-                      Pending Report
+                      Report History
                     </Link>
                     <Link
                       href="/patient/make-report"

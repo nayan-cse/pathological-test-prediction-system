@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../context/AuthContext"; // path may need to be adjusted
+import { Loader } from "lucide-react"; // Import the loader from lucide-react
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -94,7 +95,14 @@ const Login = () => {
             disabled={loading}
             className="w-full p-3 bg-blue-500 text-white rounded-md disabled:bg-gray-400 hover:bg-blue-600 transition"
           >
-            {loading ? "Logging in..." : "Login"}
+            {loading ? (
+              <div className="flex justify-center items-center">
+                <Loader className="animate-spin h-5 w-5 mr-2" />
+                Logging in...
+              </div>
+            ) : (
+              "Login"
+            )}
           </button>
         </form>
 

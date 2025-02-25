@@ -1,69 +1,11 @@
-{"level":"warn","message":"Login failed: User with email pervejbd2029@gmail.com not found","timestamp":"2025-02-19T17:32:06.192Z"}
-{"level":"info","message":"Nayan Malakar  has nayan.cse.just@gmail.com registered successfully","timestamp":"2025-02-19T17:32:18.430Z"}
-{"level":"warn","message":"Login failed: Incorrect password for email nayan.cse.just@gmail.com","timestamp":"2025-02-19T17:32:41.738Z"}
-{"level":"info","message":"Pervej Chowkider has pervejbd2029@gmail.com registered successfully","timestamp":"2025-02-19T17:32:47.950Z"}
-{"level":"warn","message":"Login failed: Incorrect password for email nayan.cse.just@gmail.com","timestamp":"2025-02-19T17:32:51.867Z"}
-{"level":"info","message":"User pervejbd2029@gmail.com logged in successfully","timestamp":"2025-02-19T17:32:58.165Z"}
-{"level":"info","message":"Decoded Token: ID = 5, Role = patient","timestamp":"2025-02-19T17:33:00.184Z"}
-{"level":"info","message":"Decoded Token: ID = 5, Role = patient","timestamp":"2025-02-19T17:33:00.263Z"}
-{"level":"info","message":"Decoded Token: ID = 5, Role = patient","timestamp":"2025-02-19T17:33:31.469Z"}
-{"level":"info","message":"Decoded Token: ID = 5, Role = patient","timestamp":"2025-02-19T17:33:31.813Z"}
-{"level":"info","message":"Decoded Token: ID = 5, Role = patient","timestamp":"2025-02-19T17:33:37.465Z"}
-{"level":"info","message":"Decoded Token: ID = 5, Role = patient","timestamp":"2025-02-19T17:33:37.503Z"}
-{"level":"info","message":"Decoded Token: ID = 5, Role = patient","timestamp":"2025-02-19T17:33:44.268Z"}
-{"level":"info","message":"Decoded Token: ID = 5, Role = patient","timestamp":"2025-02-19T17:33:44.312Z"}
-{"level":"info","message":"User ID: 5 logged out successfully","timestamp":"2025-02-19T17:33:47.616Z"}
-{"level":"warn","message":"Login failed: Incorrect password for email nayan.cse.just@gmail.com","timestamp":"2025-02-19T17:34:16.258Z"}
-{"level":"warn","message":"Login failed: Incorrect password for email nayan.cse.just@gmail.com","timestamp":"2025-02-19T17:34:23.900Z"}
-{"level":"info","message":"User nayan.cse.just@gmail.com logged in successfully","timestamp":"2025-02-19T17:35:40.751Z"}
-{"level":"info","message":"Decoded Token: ID = 4, Role = patient","timestamp":"2025-02-19T17:35:41.379Z"}
-{"level":"info","message":"Decoded Token: ID = 4, Role = patient","timestamp":"2025-02-19T17:35:41.429Z"}
-{"level":"info","message":"Decoded Token: ID = 4, Role = patient","timestamp":"2025-02-19T17:35:57.953Z"}
-{"level":"info","message":"Decoded Token: ID = 4, Role = patient","timestamp":"2025-02-19T17:35:57.987Z"}
-{"level":"info","message":"User ID: 4 logged out successfully","timestamp":"2025-02-19T17:35:59.305Z"}
-{"level":"warn","message":"Login failed: User with email jane.doe20@example.com not found","timestamp":"2025-02-24T09:24:53.384Z"}
-{"level":"warn","message":"Login failed: User with email nayanmalakar720@gmail.com not found","timestamp":"2025-02-24T09:25:33.960Z"}
-{"level":"warn","message":"Registration failed: User with email john1.doe@example.com already exists","timestamp":"2025-02-24T09:26:04.243Z"}
-{"level":"warn","message":"Registration failed: User with email 190128.cse@student.just.edu.bd already exists","timestamp":"2025-02-24T09:26:13.606Z"}
-{"level":"info","message":"Nayan Malakar has jane.doe20@example.com registered successfully","timestamp":"2025-02-24T09:26:20.625Z"}
-{"level":"info","message":"User jane.doe20@example.com logged in successfully","timestamp":"2025-02-24T09:26:25.913Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T09:26:28.295Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T09:26:28.410Z"}
-{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-24T09:29:40.941Z"}
-{"level":"info","message":"User jane.doe20@example.com logged in successfully","timestamp":"2025-02-24T09:29:49.772Z"}
-{"level":"error","message":"Error verifying token: jwt expired","timestamp":"2025-02-24T18:21:54.013Z"}
-{"level":"error","message":"Login failed: Email or password missing","timestamp":"2025-02-24T18:22:10.104Z"}
-{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T18:22:55.422Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:23:31.742Z"}
-{"level":"warn","message":"Access denied: User with role patient tried to access the report API","timestamp":"2025-02-24T18:23:31.742Z"}
-{"level":"error","message":"Error verifying token: jwt expired","timestamp":"2025-02-24T18:24:21.175Z"}
-{"level":"error","message":"Error verifying token: jwt expired","timestamp":"2025-02-24T18:24:28.367Z"}
-{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T18:24:58.114Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:25:39.257Z"}
-{"level":"error","message":"Error verifying token: jwt expired","timestamp":"2025-02-24T18:26:09.748Z"}
-{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T18:26:53.360Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:27:19.761Z"}
-{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T18:38:47.355Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:38:51.843Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:38:51.877Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:40:17.591Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:42:37.352Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:42:56.446Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:43:59.829Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:44:16.880Z"}
-{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-24T18:44:35.203Z"}
-{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T19:17:03.403Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:17:04.182Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:17:04.212Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:17:07.984Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:17:07.996Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:17:14.116Z"}
-{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-24T19:17:58.754Z"}
-{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T19:29:27.613Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:29:28.092Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:29:28.127Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:29:30.539Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:29:30.556Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:29:36.067Z"}
-{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:30:05.194Z"}
-{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-24T19:31:10.146Z"}
+{"level":"info","message":"Verifying token","timestamp":"2025-02-25T17:30:09.313Z"}
+{"level":"info","message":"Token verified for user: 6, role: patient","timestamp":"2025-02-25T17:30:09.319Z"}
+{"level":"info","message":"Received symptoms: Shivering","timestamp":"2025-02-25T17:30:09.321Z"}
+{"level":"info","message":"Forwarding request to Flask API: http://localhost:5000/predict","timestamp":"2025-02-25T17:30:09.322Z"}
+{"level":"info","message":"Predicted tests: Blood Culture,CBC,Malaria Antigen Test","timestamp":"2025-02-25T17:30:09.875Z"}
+{"level":"info","message":"Inserting data into database","timestamp":"2025-02-25T17:30:09.876Z"}
+{"level":"info","message":"Data has been successfully saved.","timestamp":"2025-02-25T17:30:09.893Z"}
+{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-25T17:31:13.360Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-25T17:31:31.831Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T17:31:32.413Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-25T17:31:32.434Z"}
