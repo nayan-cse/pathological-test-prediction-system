@@ -31,3 +31,39 @@
 {"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T09:26:28.410Z"}
 {"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-24T09:29:40.941Z"}
 {"level":"info","message":"User jane.doe20@example.com logged in successfully","timestamp":"2025-02-24T09:29:49.772Z"}
+{"level":"error","message":"Error verifying token: jwt expired","timestamp":"2025-02-24T18:21:54.013Z"}
+{"level":"error","message":"Login failed: Email or password missing","timestamp":"2025-02-24T18:22:10.104Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T18:22:55.422Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:23:31.742Z"}
+{"level":"warn","message":"Access denied: User with role patient tried to access the report API","timestamp":"2025-02-24T18:23:31.742Z"}
+{"level":"error","message":"Error verifying token: jwt expired","timestamp":"2025-02-24T18:24:21.175Z"}
+{"level":"error","message":"Error verifying token: jwt expired","timestamp":"2025-02-24T18:24:28.367Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T18:24:58.114Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:25:39.257Z"}
+{"level":"error","message":"Error verifying token: jwt expired","timestamp":"2025-02-24T18:26:09.748Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T18:26:53.360Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:27:19.761Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T18:38:47.355Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:38:51.843Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:38:51.877Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:40:17.591Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:42:37.352Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:42:56.446Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:43:59.829Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T18:44:16.880Z"}
+{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-24T18:44:35.203Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T19:17:03.403Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:17:04.182Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:17:04.212Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:17:07.984Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:17:07.996Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:17:14.116Z"}
+{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-24T19:17:58.754Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-24T19:29:27.613Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:29:28.092Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:29:28.127Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:29:30.539Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:29:30.556Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:29:36.067Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-24T19:30:05.194Z"}
+{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-24T19:31:10.146Z"}

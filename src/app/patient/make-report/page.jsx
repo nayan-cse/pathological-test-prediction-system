@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { X, Search, AlertCircle } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const symptoms = [
   { name: "Itching", bangla: "চুলকানি" },
@@ -158,6 +159,9 @@ const symptoms = [
 const MakeReport = () => {
   const [selectedSymptoms, setSelectedSymptoms] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [responseData, setResponseData] = useState(null);
+  const [error, setError] = useState(null);
+  const router = useRouter();
 
   const handleSelect = (e) => {
     const value = e.target.value;
@@ -177,24 +181,101 @@ const MakeReport = () => {
         symptom.bangla.includes(searchTerm))
   );
 
+  const handleSubmit = async () => {
+    const token = localStorage.getItem("accessToken"); // Get the JWT token from localStorage
+    
+    if (!token) {
+      setError("No token found. Please log in again.");
+      setResponseData(null);
+      router.push("/login"); // Redirect to the login page
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/v1/patient/make-report", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}`,  // Send JWT token to the API
+        },
+        body: JSON.stringify({ symptoms: selectedSymptoms }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setResponseData(result);
+        setError(null); // Clear any previous error
+      } else {
+        setError(result.error);
+        setResponseData(null); 
+      }
+    } catch (err) {
+      console.error("Error during request:", err);
+      setError("An error occurred while making the report.");
+      setResponseData(null); 
+      toast.error(err.message);  // Show the error message
+
+      // Redirect to login in case of any other error (network issue, invalid response, etc.)
+      if (err.message.includes("token") || err.message === "Failed to fetch") {
+        router.push("/login"); // Redirect to the login page
+      }
+    }
+  };
+
+  // Fetch data for GET method (e.g., previous reports or other relevant data)
+  const handleGet = async () => {
+    const token = localStorage.getItem("accessToken"); // Get the JWT token from localStorage
+
+    if (!token) {
+      setError("No token found. Please log in again.");
+      setResponseData(null);
+      router.push("/login"); // Redirect to the login page
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/v1/patient/make-report", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}`,  // Send JWT token to the API
+        },
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setResponseData(result);
+        setError(null); // Clear any previous error
+      } else {
+        setError(result.error);
+        setResponseData(null);
+      }
+    } catch (err) {
+      console.error("Error during request:", err);
+      setError("An error occurred while fetching data.");
+      setResponseData(null);
+      toast.error(err.message);  // Show the error message
+    }
+  };
+
+  useEffect(() => {
+    handleGet(); // Fetch data on component load, if required
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 p-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">
-            Symptom Checker
-          </h1>
-          <p className="text-gray-600">
-            Select your symptoms for a preliminary health assessment
-          </p>
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">Symptom Checker</h1>
+          <p className="text-gray-600">Select your symptoms for a preliminary health assessment</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {/* Left side: Selection Area */}
           <div className="bg-white rounded-xl shadow-lg p-6">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Select Symptoms
-            </h2>
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">Select Symptoms</h2>
 
             {/* Search Box */}
             <div className="relative mb-4">
@@ -216,11 +297,7 @@ const MakeReport = () => {
               className="w-full h-[calc(100vh-400px)] min-h-[300px] border border-gray-200 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
               {filteredSymptoms.map((symptom) => (
-                <option
-                  key={symptom.name}
-                  value={symptom.name}
-                  className="p-3 hover:bg-blue-50 cursor-pointer"
-                >
+                <option key={symptom.name} value={symptom.name} className="p-3 hover:bg-blue-50 cursor-pointer">
                   {symptom.name} ({symptom.bangla})
                 </option>
               ))}
@@ -229,9 +306,7 @@ const MakeReport = () => {
 
           {/* Right side: Selected Symptoms */}
           <div className="bg-white rounded-xl shadow-lg p-6">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">
-              Selected Symptoms
-            </h2>
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">Selected Symptoms</h2>
 
             {selectedSymptoms.length === 0 ? (
               <div className="flex flex-col items-center justify-center h-40 text-gray-500">
@@ -248,9 +323,7 @@ const MakeReport = () => {
                       className="group flex items-center gap-2 bg-blue-50 hover:bg-blue-100 text-blue-700 px-4 py-2 rounded-full transition-colors"
                     >
                       <span>{symptom}</span>
-                      <span className="text-sm text-blue-500">
-                        ({symptomData?.bangla})
-                      </span>
+                      <span className="text-sm text-blue-500">({symptomData?.bangla})</span>
                       <button
                         onClick={() => removeSymptom(symptom)}
                         className="ml-1 p-1 rounded-full hover:bg-blue-200 transition-colors"
@@ -268,13 +341,26 @@ const MakeReport = () => {
         {/* Submit Button */}
         <div className="mt-6 text-center">
           <button
-            onClick={() => console.log("Selected Symptoms:", selectedSymptoms)}
+            onClick={handleSubmit}
             className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={selectedSymptoms.length === 0}
           >
             Generate Report
           </button>
         </div>
+
+        {/* Error or Response */}
+        {error && <p className="text-red-600 text-center mt-4">{error}</p>}
+        {responseData && (
+          <div className="mt-6">
+            <h3 className="text-2xl font-bold">Predicted Tests</h3>
+            <ul>
+              {responseData.predicted_tests?.map((test, index) => (
+                <li key={index} className="text-lg">{test}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );
