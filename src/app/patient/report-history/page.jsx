@@ -91,7 +91,14 @@ const ReportHistory = () => {
     
     // Create HTML content for the PDF
     tempDiv.innerHTML = `
-      <div id="pdf-content" style="width: 210mm; height: 297mm; margin: 0; padding: 0; background-color: white;">
+      <div id="pdf-content" className="w-full max-w-[210mm] bg-white shadow-xl overflow-hidden"
+        style={{
+          minHeight: '290mm', // Ensures content fits on one page
+          maxHeight: '290mm', // Restricts content to A4 size
+          width: '210mm', // A4 width
+          margin: '0 auto',
+          position: 'relative',
+        }}>
         <!-- Header -->
         <div style="display: flex; justify-content: space-between; background-color: #f9fafb; padding: 16px; border-bottom: 1px solid #d1d5db; font-size: 14px; font-weight: 500;">
           <p>Name: ${patientData.user_name || "__________________"}</p>

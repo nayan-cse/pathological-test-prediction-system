@@ -628,3 +628,12 @@
 {"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T08:05:06.564Z"}
 {"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T08:05:06.565Z"}
 {"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T08:05:06.577Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T08:16:26.997Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T08:16:26.999Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T08:16:27.030Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T08:16:28.324Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T08:16:28.325Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T08:16:28.327Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T08:17:05.043Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T08:17:05.045Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T08:17:05.066Z"}
