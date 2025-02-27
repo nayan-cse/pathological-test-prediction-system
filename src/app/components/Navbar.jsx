@@ -50,12 +50,6 @@ const Navbar = () => {
                 {user?.role === "patient" && (
                   <>
                     <Link
-                      href="/patient/previous-report"
-                      className="text-white px-3 py-2 rounded-md text-sm font-medium"
-                    >
-                      Previous Report
-                    </Link>
-                    <Link
                       href="/patient/report-history"
                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
