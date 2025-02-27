@@ -11,6 +11,7 @@ const Register = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [password, setPassword] = useState("");
   const [dateOfBirth, setDateOfBirth] = useState("");
+  const [gender, setGender] = useState(""); // New gender state
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
@@ -23,7 +24,7 @@ const Register = () => {
     setLoading(true);
 
     // Validation
-    if (!name || !email || !phoneNumber || !password || !dateOfBirth) {
+    if (!name || !email || !phoneNumber || !password || !dateOfBirth || !gender) {
       toast.error("All fields are required");
       setLoading(false);
       return;
@@ -42,6 +43,7 @@ const Register = () => {
           password,
           role: "patient",
           date_of_birth: dateOfBirth,
+          gender, // Include gender in the payload
         }),
       });
 
@@ -129,6 +131,23 @@ const Register = () => {
               className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               max={maxDate.toISOString().split('T')[0]}  // Set the max date dynamically
             />
+          </div>
+
+          {/* Gender Selection */}
+          <div className="mb-4">
+            <label htmlFor="gender" className="block text-gray-700">Gender</label>
+            <select
+              id="gender"
+              name="gender"
+              value={gender}
+              onChange={(e) => setGender(e.target.value)}
+              required
+              className="w-full p-3 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="" disabled>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
           </div>
 
           <button
