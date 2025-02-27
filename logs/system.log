@@ -643,3 +643,96 @@
 {"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T08:21:21.560Z"}
 {"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T08:21:21.561Z"}
 {"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T08:21:21.563Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T08:22:41.092Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T08:22:41.094Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T08:22:41.125Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T08:23:04.195Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T08:23:04.195Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T08:23:04.198Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-27T09:32:02.456Z"}
+{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-27T09:32:16.536Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-27T09:32:24.755Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-27T09:32:25.206Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-27T09:32:25.259Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:32:28.296Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:32:28.296Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:32:28.310Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:32:28.321Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:32:28.322Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:32:28.324Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:35:36.931Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:35:36.932Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:35:36.960Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:36:46.694Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:36:46.695Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:36:46.724Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:36:51.332Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:36:51.333Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:36:51.336Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:40:12.899Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:40:12.901Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:40:12.944Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:40:17.656Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:40:17.657Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:40:17.659Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:44:19.782Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:44:19.783Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:44:19.786Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:44:42.863Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:44:42.865Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:44:42.892Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:44:50.325Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:44:50.326Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:44:50.329Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:46:19.044Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:46:19.044Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:46:19.047Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:47:25.521Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:47:25.528Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:47:25.559Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:49:43.724Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:49:43.726Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:49:43.760Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:49:45.031Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:49:45.032Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:49:45.044Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:49:50.309Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:49:50.309Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:49:50.318Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:51:29.091Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:51:29.093Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:51:29.117Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-27T09:51:29.392Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6","timestamp":"2025-02-27T09:51:29.393Z"}
+{"level":"info","message":"Successfully retrieved 7 test report(s) for User ID: 6","timestamp":"2025-02-27T09:51:29.395Z"}
+{"level":"info","message":"Verifying token","timestamp":"2025-02-27T09:52:36.322Z"}
+{"level":"info","message":"Token verified for user: 6, role: patient","timestamp":"2025-02-27T09:52:36.324Z"}
+{"level":"info","message":"Received symptoms: Nodal Skin Eruptions,Joint Pain","timestamp":"2025-02-27T09:52:36.326Z"}
+{"level":"info","message":"Forwarding request to Flask API: http://localhost:5000/predict","timestamp":"2025-02-27T09:52:36.326Z"}
+{"level":"info","message":"Predicted tests: ANA,CBC,CRP,ESR,Rheumatoid Factor (RF),Skin Biopsy","timestamp":"2025-02-27T09:52:37.790Z"}
+{"level":"info","message":"Inserting data into database","timestamp":"2025-02-27T09:52:37.790Z"}
+{"level":"info","message":"Data has been successfully saved.","timestamp":"2025-02-27T09:52:37.801Z"}
+{"level":"info","message":"Verifying token","timestamp":"2025-02-27T09:53:31.738Z"}
+{"level":"info","message":"Token verified for user: 6, role: patient","timestamp":"2025-02-27T09:53:31.740Z"}
+{"level":"info","message":"Received symptoms: Continuous Sneezing,Mood Swings","timestamp":"2025-02-27T09:53:31.741Z"}
+{"level":"info","message":"Forwarding request to Flask API: http://localhost:5000/predict","timestamp":"2025-02-27T09:53:31.741Z"}
+{"level":"info","message":"Predicted tests: Allergy Test,Blood Glucose Test,CBC,Electrolyte Panel,IgE (Immunoglobulin E),Thyroid Panel","timestamp":"2025-02-27T09:53:33.035Z"}
+{"level":"info","message":"Inserting data into database","timestamp":"2025-02-27T09:53:33.036Z"}
+{"level":"info","message":"Data has been successfully saved.","timestamp":"2025-02-27T09:53:33.041Z"}
+{"level":"info","message":"Verifying token","timestamp":"2025-02-27T09:53:52.140Z"}
+{"level":"info","message":"Token verified for user: 6, role: patient","timestamp":"2025-02-27T09:53:52.142Z"}
+{"level":"info","message":"Received symptoms: Irregular Sugar Level","timestamp":"2025-02-27T09:53:52.143Z"}
+{"level":"info","message":"Forwarding request to Flask API: http://localhost:5000/predict","timestamp":"2025-02-27T09:53:52.143Z"}
+{"level":"info","message":"Predicted tests: Blood Glucose Test,HbA1c","timestamp":"2025-02-27T09:53:53.018Z"}
+{"level":"info","message":"Inserting data into database","timestamp":"2025-02-27T09:53:53.018Z"}
+{"level":"info","message":"Data has been successfully saved.","timestamp":"2025-02-27T09:53:53.023Z"}
+{"level":"info","message":"Verifying token","timestamp":"2025-02-27T09:54:10.796Z"}
+{"level":"info","message":"Token verified for user: 6, role: patient","timestamp":"2025-02-27T09:54:10.797Z"}
+{"level":"info","message":"Received symptoms: Lethargy","timestamp":"2025-02-27T09:54:10.798Z"}
+{"level":"info","message":"Forwarding request to Flask API: http://localhost:5000/predict","timestamp":"2025-02-27T09:54:10.798Z"}
+{"level":"info","message":"Predicted tests: CBC,Ferritin,Thyroid Panel","timestamp":"2025-02-27T09:54:11.699Z"}
+{"level":"info","message":"Inserting data into database","timestamp":"2025-02-27T09:54:11.699Z"}
+{"level":"info","message":"Data has been successfully saved.","timestamp":"2025-02-27T09:54:11.705Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-27T14:20:33.694Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-27T14:20:34.117Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-27T14:20:34.144Z"}
