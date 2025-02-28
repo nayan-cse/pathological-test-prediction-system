@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState, useEffect } from "react";
@@ -17,18 +18,30 @@ export default function ReportRequest() {
     hasPrevPage: false
   });
 
+  // Toast state
+  const [toast, setToast] = useState(null);
+
   // State for modals
   const [isApproveModalOpen, setIsApproveModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [selectedReport, setSelectedReport] = useState(null);
   const [editedTest, setEditedTest] = useState("");
-  const [successMessage, setSuccessMessage] = useState(null);
 
   const router = useRouter();
   const searchParams = useSearchParams();
 
   const currentPage = parseInt(searchParams.get('page') || '1');
   const limit = parseInt(searchParams.get('limit') || '10');
+
+  // Custom toast implementation
+  const showToast = (type, message) => {
+    setToast({ type, message });
+    
+    // Auto-dismiss after 3 seconds
+    setTimeout(() => {
+      setToast(null);
+    }, 3000);
+  };
 
   const updateUrlParams = (page, limit) => {
     const params = new URLSearchParams();
@@ -65,13 +78,15 @@ export default function ReportRequest() {
         setPagination(result.pagination);
         setError(null);
       } else {
-        setError(result.error || 'Failed to fetch reports.');
+        setError(result.error || 'No Report Request available');
         setResponseData(null);
+        showToast('error', result.error || 'No Report Request available');
       }
     } catch (err) {
       console.error("Error during request:", err);
       setError("An error occurred while fetching data.");
       setResponseData(null);
+      showToast('error', "An error occurred while fetching data.");
     } finally {
       setLoading(false);
     }
@@ -79,6 +94,11 @@ export default function ReportRequest() {
 
   useEffect(() => {
     handleGet(currentPage, limit);
+    
+    // Clear any toast when component unmounts
+    return () => {
+      setToast(null);
+    };
   }, [currentPage, limit]);
 
   const calculateAge = (dob) => {
@@ -138,6 +158,7 @@ export default function ReportRequest() {
 
     if (!token) {
       console.error("No token found.");
+      showToast('error', "No authentication token found. Please log in again.");
       return;
     }
 
@@ -146,6 +167,7 @@ export default function ReportRequest() {
 
     const bodyData = {
       reportId: id,
+      approvedBy: userId,
       testByModel: test_by_model,
     };
 
@@ -160,22 +182,18 @@ export default function ReportRequest() {
       });
 
       const result = await response.json();
+
       if (response.ok) {
         setIsApproveModalOpen(false);
-        setSuccessMessage("Report approved successfully!");
-        handleGet(currentPage, limit);  // Refresh the report list after approval
-        
-        // Clear success message after 3 seconds
-        setTimeout(() => {
-          setSuccessMessage(null);
-        }, 3000);
+        showToast('success', "Report approved successfully!");
+        handleGet(currentPage, limit); // Refresh the report list after approval
       } else {
         console.error("Error during approval:", result.error);
-        setError(result.error || "Failed to approve report");
+        showToast('error', result.error || "Failed to approve report");
       }
     } catch (error) {
       console.error("API request error:", error);
-      setError("An error occurred while approving the report");
+      showToast('error', "An error occurred while approving the report");
     }
   };
 
@@ -191,6 +209,7 @@ export default function ReportRequest() {
 
     if (!token) {
       console.error("No token found.");
+      showToast('error', "No authentication token found. Please log in again.");
       return;
     }
 
@@ -199,6 +218,7 @@ export default function ReportRequest() {
 
     const bodyData = {
       reportId: id,
+      approvedBy: userId,
       testByModel: editedTest,
     };
 
@@ -216,20 +236,15 @@ export default function ReportRequest() {
 
       if (response.ok) {
         setIsEditModalOpen(false);
-        setSuccessMessage("Report updated successfully!");
-        handleGet(currentPage, limit);  // Refresh the report list after edit
-        
-        // Clear success message after 3 seconds
-        setTimeout(() => {
-          setSuccessMessage(null);
-        }, 3000);
+        showToast('success', "Report updated successfully!");
+        handleGet(currentPage, limit); // Refresh the report list after edit
       } else {
         console.error("Error during edit:", result.error);
-        setError(result.error || "Failed to update report");
+        showToast('error', result.error || "Failed to update report");
       }
     } catch (error) {
       console.error("API request error:", error);
-      setError("An error occurred while updating the report");
+      showToast('error', "An error occurred while updating the report");
     }
   };
 
@@ -245,8 +260,32 @@ export default function ReportRequest() {
     setEditedTest("");
   };
 
+  // Close toast manually
+  const handleCloseToast = () => {
+    setToast(null);
+  };
+
   return (
     <div className="p-6 bg-gradient-to-br from-indigo-50 to-blue-100 min-h-screen">
+      {/* Custom Toast */}
+      {toast && (
+        <div 
+          className={`fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg flex items-center justify-between max-w-md ${
+            toast.type === 'success' ? 'bg-green-100 text-green-800 border-green-300' : 
+            toast.type === 'error' ? 'bg-red-100 text-red-800 border-red-300' : 
+            'bg-blue-100 text-blue-800 border-blue-300'
+          }`}
+        >
+          <span>{toast.message}</span>
+          <button 
+            onClick={handleCloseToast}
+            className="ml-4 text-gray-500 hover:text-gray-700"
+          >
+            <X size={18} />
+          </button>
+        </div>
+      )}
+      
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-800 text-center mb-6">Report History</h1>
 
@@ -260,12 +299,6 @@ export default function ReportRequest() {
         {error && 
           <div className="bg-red-50 p-4 rounded-lg border border-red-200 text-red-600 text-center mb-4">
             {error}
-          </div>
-        }
-
-        {successMessage && 
-          <div className="bg-green-50 p-4 rounded-lg border border-green-200 text-green-600 text-center mb-4">
-            {successMessage}
           </div>
         }
 
