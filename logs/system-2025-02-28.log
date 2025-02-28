@@ -1,0 +1,40 @@
+{"level":"info","message":"Password reset request received for: undefined","timestamp":"2025-02-28T12:11:04.442Z"}
+{"level":"info","message":"Password reset request received for: undefined","timestamp":"2025-02-28T12:11:22.892Z"}
+{"level":"info","message":"Password reset request received for: 190128.cse@student.just.edu.bd","timestamp":"2025-02-28T12:14:23.039Z"}
+{"level":"info","message":"Password reset request received for: 190128.cse@student.just.edu.bd","timestamp":"2025-02-28T12:17:35.169Z"}
+{"level":"info","message":"Password reset token generated for 190128.cse@student.just.edu.bd: d7245d76316f74b3998cd7849f480b4620db3015","timestamp":"2025-02-28T12:17:35.203Z"}
+{"level":"info","message":"Password reset email sent successfully to: 190128.cse@student.just.edu.bd","timestamp":"2025-02-28T12:17:38.410Z"}
+{"level":"info","message":"Password reset request received for: machinelearninglab3@gmail.com","timestamp":"2025-02-28T12:22:39.611Z"}
+{"level":"info","message":"Password reset token generated for machinelearninglab3@gmail.com: 937fc3447852394d47480beda98fa6722f5e39fb","timestamp":"2025-02-28T12:22:39.636Z"}
+{"level":"info","message":"Password reset email sent successfully to: machinelearninglab3@gmail.com","timestamp":"2025-02-28T12:22:43.495Z"}
+{"level":"info","message":"Password reset request received for token: 937fc3447852394d47480beda98fa6722f5e39fb","timestamp":"2025-02-28T12:23:31.406Z"}
+{"level":"error","message":"Error processing password reset: Cannot read properties of undefined (reading 'id')","timestamp":"2025-02-28T12:23:31.522Z"}
+{"level":"info","message":"Password reset request received for token: 937fc3447852394d47480beda98fa6722f5e39fb","timestamp":"2025-02-28T13:10:35.076Z"}
+{"level":"error","message":"Error processing password reset: Cannot read properties of undefined (reading 'id')","timestamp":"2025-02-28T13:10:35.254Z"}
+{"level":"info","message":"Password reset request received for token: 937fc3447852394d47480beda98fa6722f5e39fb","timestamp":"2025-02-28T13:12:58.236Z"}
+{"level":"info","message":"Password successfully reset for user ID: 6","timestamp":"2025-02-28T13:12:58.436Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email machinelearninglab3@gmail.com","timestamp":"2025-02-28T14:23:04.313Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email machinelearninglab3@gmail.com","timestamp":"2025-02-28T14:23:12.423Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email machinelearninglab3@gmail.com","timestamp":"2025-02-28T14:23:19.615Z"}
+{"level":"info","message":"Password reset request received for: machinelearninglab3@gmail.com","timestamp":"2025-02-28T14:24:05.244Z"}
+{"level":"info","message":"Password reset token generated for machinelearninglab3@gmail.com: 87a6efbb236e4637983510e9a02ce86e256020fb","timestamp":"2025-02-28T14:24:05.283Z"}
+{"level":"info","message":"Password reset email sent successfully to: machinelearninglab3@gmail.com","timestamp":"2025-02-28T14:24:08.673Z"}
+{"level":"info","message":"Password reset request received for token: 87a6efbb236e4637983510e9a02ce86e256020fb","timestamp":"2025-02-28T14:24:41.742Z"}
+{"level":"info","message":"Password successfully reset for user ID: 6","timestamp":"2025-02-28T14:24:41.854Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-28T14:24:50.263Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-28T14:24:51.424Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-28T14:24:51.449Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T14:24:59.849Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T14:24:59.850Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T14:24:59.885Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T14:24:59.900Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T14:24:59.900Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T14:24:59.903Z"}
+{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-28T14:25:02.927Z"}
+{"level":"info","message":"Nayan Malakar with email johndoe@example.com registered successfully","timestamp":"2025-02-28T15:26:48.471Z"}
+{"level":"warn","message":"Registration failed: User with email test2@gmail.com already exists","timestamp":"2025-02-28T15:31:16.090Z"}
+{"level":"warn","message":"Registration failed: User with email machinelearninglab3@gmail.com already exists","timestamp":"2025-02-28T15:39:34.660Z"}
+{"level":"info","message":"Nayan Malakar with email johndoe1@example.com registered successfully","timestamp":"2025-02-28T15:41:11.395Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-28T15:41:40.985Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-28T15:41:41.824Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-28T15:41:41.844Z"}
