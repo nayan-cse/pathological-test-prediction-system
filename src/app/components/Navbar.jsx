@@ -1,134 +1,3 @@
-// "use client";
-// import { useAuth } from "../context/AuthContext";
-// import Link from "next/link";
-// import { useRouter } from "next/navigation";
-// import { toast } from "react-toastify";
-
-// const Navbar = () => {
-//   const { user, logout } = useAuth();
-//   const router = useRouter();
-
-//   const handleLogout = async () => {
-//     try {
-//       await logout();
-//       toast.success("Successfully logged out!");
-//       router.push("/login");
-//     } catch (error) {
-//       toast.error("Error logging out. Please try again.");
-//     }
-//   };
-
-//   return (
-//     <nav className="bg-gray-800 p-4">
-//       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-//         <div className="relative flex items-center justify-between h-16">
-//           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-//             <div className="flex-shrink-0 text-white text-xl">
-//               Pathological Test Prediction System
-//             </div>
-//             <div className="hidden sm:block sm:ml-6">
-//               <div className="flex space-x-4">
-//                 {/* Display Register and Login only when no user is logged in */}
-//                 {!user && (
-//                   <>
-//                     <Link
-//                       href="/register"
-//                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
-//                     >
-//                       Register
-//                     </Link>
-//                     <Link
-//                       href="/login"
-//                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
-//                     >
-//                       Login
-//                     </Link>
-//                   </>
-//                 )}
-
-//                 {/* Show the appropriate links based on user role */}
-//                 {user?.role === "patient" && (
-//                   <>
-//                     <Link
-//                       href="/patient/report-history"
-//                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
-//                     >
-//                       Report History
-//                     </Link>
-//                     <Link
-//                       href="/patient/make-report"
-//                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
-//                     >
-//                       Make an Appointment
-//                     </Link>
-//                   </>
-//                 )}
-
-//                 {user?.role === "doctor" && (
-//                   <>
-//                     <Link
-//                       href="/doctor/report-request"
-//                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
-//                     >
-//                       Report Request
-//                     </Link>
-//                     <Link
-//                       href="/doctor/reviewed-report"
-//                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
-//                     >
-//                       Reviewed Report
-//                     </Link>
-//                   </>
-//                 )}
-
-//                 {user?.role === "admin" && (
-//                   <>
-//                     <Link
-//                       href="/admin/add-doctor"
-//                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
-//                     >
-//                       Add Doctor
-//                     </Link>
-//                     <Link
-//                       href="/admin/doctors-panel"
-//                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
-//                     >
-//                       Doctors Panel
-//                     </Link>
-//                     <Link
-//                       href="/admin/patients-panel"
-//                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
-//                     >
-//                       Patient Panel
-//                     </Link>
-//                     <Link
-//                       href="/admin/total-report"
-//                       className="text-white px-3 py-2 rounded-md text-sm font-medium"
-//                     >
-//                       Total Report
-//                     </Link>
-//                   </>
-//                 )}
-
-//                 {/* Show the Logout button if the user is logged in */}
-//                 {user && (
-//                   <button
-//                     onClick={handleLogout}
-//                     className="text-white px-3 py-2 rounded-md text-sm font-medium"
-//                   >
-//                     Logout
-//                   </button>
-//                 )}
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
 "use client";
 import { useAuth } from "../context/AuthContext";
 import Link from "next/link";
@@ -157,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-blue-800 to-indigo-900 shadow-lg">
+    <nav className="bg-blue-600 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -170,100 +39,96 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-4">
-              {/* Display Register and Login only when no user is logged in */}
-              {!user && (
-                <>
-                  <Link
-                    href="/register"
-                    className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
-                  >
-                    Register
-                  </Link>
-                  <Link
-                    href="/login"
-                    className="bg-blue-600 text-white hover:bg-blue-500 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
-                  >
-                    Login
-                  </Link>
-                </>
-              )}
+          <div className="hidden md:flex items-center space-x-6">
+            {/* Display Register and Login only when no user is logged in */}
+            {!user ? (
+              <>
+                <Link
+                  href="/register"
+                  className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                >
+                  Register
+                </Link>
+                <Link
+                  href="/login"
+                  className="bg-blue-500 text-white hover:bg-blue-400 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                >
+                  Login
+                </Link>
+              </>
+            ) : (
+              <>
+                {/* Show user-specific links */}
+                {user?.role === "patient" && (
+                  <>
+                    <Link
+                      href="/patient/report-history"
+                      className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                    >
+                      Report History
+                    </Link>
+                    <Link
+                      href="/patient/make-report"
+                      className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                    >
+                      Make an Appointment
+                    </Link>
+                  </>
+                )}
 
-              {/* Show the appropriate links based on user role */}
-              {user?.role === "patient" && (
-                <>
-                  <Link
-                    href="/patient/report-history"
-                    className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
-                  >
-                    Report History
-                  </Link>
-                  <Link
-                    href="/patient/make-report"
-                    className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
-                  >
-                    Make an Appointment
-                  </Link>
-                </>
-              )}
+                {user?.role === "doctor" && (
+                  <>
+                    <Link
+                      href="/doctor/report-request"
+                      className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                    >
+                      Report Request
+                    </Link>
+                    <Link
+                      href="/doctor/reviewed-report"
+                      className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                    >
+                      Reviewed Report
+                    </Link>
+                  </>
+                )}
 
-              {user?.role === "doctor" && (
-                <>
-                  <Link
-                    href="/doctor/report-request"
-                    className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
-                  >
-                    Report Request
-                  </Link>
-                  <Link
-                    href="/doctor/reviewed-report"
-                    className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
-                  >
-                    Reviewed Report
-                  </Link>
-                </>
-              )}
-
-              {user?.role === "admin" && (
-                <>
-                  <Link
-                    href="/admin/add-doctor"
-                    className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
-                  >
-                    Add Doctor
-                  </Link>
-                  <Link
-                    href="/admin/doctors-panel"
-                    className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
-                  >
-                    Doctors Panel
-                  </Link>
-                  <Link
-                    href="/admin/patients-panel"
-                    className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
-                  >
-                    Patient Panel
-                  </Link>
-                  <Link
-                    href="/admin/total-report"
-                    className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
-                  >
-                    Total Report
-                  </Link>
-                </>
-              )}
-
-              {/* Show the Logout button if the user is logged in */}
-              {user && (
+                {user?.role === "admin" && (
+                  <>
+                    <Link
+                      href="/admin/add-doctor"
+                      className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                    >
+                      Add Doctor
+                    </Link>
+                    <Link
+                      href="/admin/doctors-panel"
+                      className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                    >
+                      Doctors Panel
+                    </Link>
+                    <Link
+                      href="/admin/patients-panel"
+                      className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                    >
+                      Patient Panel
+                    </Link>
+                    <Link
+                      href="/admin/total-report"
+                      className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
+                    >
+                      Total Report
+                    </Link>
+                  </>
+                )}
                 <button
                   onClick={handleLogout}
                   className="text-gray-200 hover:bg-red-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
                 >
                   Logout
                 </button>
-              )}
-            </div>
+              </>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -286,9 +151,9 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-900">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-blue-700">
           {/* Display Register and Login only when no user is logged in */}
-          {!user && (
+          {!user ? (
             <>
               <Link
                 href="/register"
@@ -305,91 +170,89 @@ const Navbar = () => {
                 Login
               </Link>
             </>
-          )}
-
-          {/* Show the appropriate links based on user role */}
-          {user?.role === "patient" && (
+          ) : (
             <>
-              <Link
-                href="/patient/report-history"
-                className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                onClick={toggleMenu}
-              >
-                Report History
-              </Link>
-              <Link
-                href="/patient/make-report"
-                className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                onClick={toggleMenu}
-              >
-                Make an Appointment
-              </Link>
-            </>
-          )}
+              {/* Show user-specific links */}
+              {user?.role === "patient" && (
+                <>
+                  <Link
+                    href="/patient/report-history"
+                    className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={toggleMenu}
+                  >
+                    Report History
+                  </Link>
+                  <Link
+                    href="/patient/make-report"
+                    className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={toggleMenu}
+                  >
+                    Make an Appointment
+                  </Link>
+                </>
+              )}
 
-          {user?.role === "doctor" && (
-            <>
-              <Link
-                href="/doctor/report-request"
-                className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                onClick={toggleMenu}
-              >
-                Report Request
-              </Link>
-              <Link
-                href="/doctor/reviewed-report"
-                className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                onClick={toggleMenu}
-              >
-                Reviewed Report
-              </Link>
-            </>
-          )}
+              {user?.role === "doctor" && (
+                <>
+                  <Link
+                    href="/doctor/report-request"
+                    className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={toggleMenu}
+                  >
+                    Report Request
+                  </Link>
+                  <Link
+                    href="/doctor/reviewed-report"
+                    className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={toggleMenu}
+                  >
+                    Reviewed Report
+                  </Link>
+                </>
+              )}
 
-          {user?.role === "admin" && (
-            <>
-              <Link
-                href="/admin/add-doctor"
-                className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                onClick={toggleMenu}
+              {user?.role === "admin" && (
+                <>
+                  <Link
+                    href="/admin/add-doctor"
+                    className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={toggleMenu}
+                  >
+                    Add Doctor
+                  </Link>
+                  <Link
+                    href="/admin/doctors-panel"
+                    className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={toggleMenu}
+                  >
+                    Doctors Panel
+                  </Link>
+                  <Link
+                    href="/admin/patients-panel"
+                    className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={toggleMenu}
+                  >
+                    Patient Panel
+                  </Link>
+                  <Link
+                    href="/admin/total-report"
+                    className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                    onClick={toggleMenu}
+                  >
+                    Total Report
+                  </Link>
+                </>
+              )}
+              <button
+                onClick={() => {
+                  handleLogout();
+                  toggleMenu();
+                }}
+                className="text-gray-200 hover:bg-red-600 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
               >
-                Add Doctor
-              </Link>
-              <Link
-                href="/admin/doctors-panel"
-                className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                onClick={toggleMenu}
-              >
-                Doctors Panel
-              </Link>
-              <Link
-                href="/admin/patients-panel"
-                className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                onClick={toggleMenu}
-              >
-                Patient Panel
-              </Link>
-              <Link
-                href="/admin/total-report"
-                className="text-gray-200 hover:bg-blue-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                onClick={toggleMenu}
-              >
-                Total Report
-              </Link>
+                Logout
+              </button>
             </>
-          )}
-
-          {/* Show the Logout button if the user is logged in */}
-          {user && (
-            <button
-              onClick={() => {
-                handleLogout();
-                toggleMenu();
-              }}
-              className="text-gray-200 hover:bg-red-600 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium"
-            >
-              Logout
-            </button>
           )}
         </div>
       </div>

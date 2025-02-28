@@ -38,3 +38,76 @@
 {"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-28T15:41:40.985Z"}
 {"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-28T15:41:41.824Z"}
 {"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-28T15:41:41.844Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T15:41:45.925Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T15:41:45.926Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T15:41:45.935Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T15:41:45.947Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T15:41:45.948Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T15:41:45.950Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T15:52:54.143Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T15:52:54.144Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T15:52:54.168Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T15:54:49.927Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T15:54:49.928Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T15:54:49.933Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T15:55:28.155Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T15:55:28.156Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T15:55:28.160Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T15:55:52.574Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T15:55:52.576Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T15:55:52.628Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T15:55:53.743Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T15:55:53.744Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T15:55:53.755Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T16:01:47.222Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T16:01:47.224Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T16:01:47.248Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T16:01:47.264Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T16:01:47.265Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T16:01:47.268Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T16:02:01.855Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T16:02:01.855Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T16:02:01.859Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T16:02:15.695Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 2, Limit 10)","timestamp":"2025-02-28T16:02:15.696Z"}
+{"level":"info","message":"Successfully retrieved 2 test report(s) for User ID: 6 (Page 2/2)","timestamp":"2025-02-28T16:02:15.698Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T16:02:20.288Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T16:02:20.288Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T16:02:20.290Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T16:02:24.560Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 5)","timestamp":"2025-02-28T16:02:24.560Z"}
+{"level":"info","message":"Successfully retrieved 5 test report(s) for User ID: 6 (Page 1/3)","timestamp":"2025-02-28T16:02:24.562Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T16:02:28.838Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 3, Limit 5)","timestamp":"2025-02-28T16:02:28.839Z"}
+{"level":"info","message":"Successfully retrieved 2 test report(s) for User ID: 6 (Page 3/3)","timestamp":"2025-02-28T16:02:28.840Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T16:02:35.977Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 5)","timestamp":"2025-02-28T16:02:35.977Z"}
+{"level":"info","message":"Successfully retrieved 5 test report(s) for User ID: 6 (Page 1/3)","timestamp":"2025-02-28T16:02:35.979Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T16:05:54.936Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T16:05:54.937Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T16:05:54.941Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T16:05:54.962Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T16:05:54.962Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T16:05:54.966Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T16:07:16.041Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T16:07:16.043Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T16:07:16.067Z"}
+{"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-02-28T16:09:30.388Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email john1.doe@example.com","timestamp":"2025-02-28T16:10:46.231Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email john1.doe@example.com","timestamp":"2025-02-28T16:11:13.119Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email john1.doe@example.com","timestamp":"2025-02-28T16:16:07.803Z"}
+{"level":"info","message":"User john1.doe@example.com logged in successfully","timestamp":"2025-02-28T16:16:30.097Z"}
+{"level":"info","message":"Decoded Token: User ID = 1, Role = doctor","timestamp":"2025-02-28T16:16:52.575Z"}
+{"level":"info","message":"Fetching test reports for User ID: 1 (Page 1, Limit 10)","timestamp":"2025-02-28T16:16:52.577Z"}
+{"level":"info","message":"Successfully retrieved 4 test report(s) for User ID: 1 (Page 1/0)","timestamp":"2025-02-28T16:16:52.602Z"}
+{"level":"info","message":"Decoded Token: User ID = 1, Role = doctor","timestamp":"2025-02-28T16:16:52.652Z"}
+{"level":"info","message":"Fetching test reports for User ID: 1 (Page 1, Limit 10)","timestamp":"2025-02-28T16:16:52.653Z"}
+{"level":"info","message":"Successfully retrieved 4 test report(s) for User ID: 1 (Page 1/0)","timestamp":"2025-02-28T16:16:52.656Z"}
+{"level":"info","message":"Report ID 2 updated and approved by Doctor ID 1","timestamp":"2025-02-28T16:17:30.323Z"}
+{"level":"info","message":"Decoded Token: User ID = 1, Role = doctor","timestamp":"2025-02-28T16:17:30.340Z"}
+{"level":"info","message":"Fetching test reports for User ID: 1 (Page 1, Limit 10)","timestamp":"2025-02-28T16:17:30.341Z"}
+{"level":"info","message":"Successfully retrieved 3 test report(s) for User ID: 1 (Page 1/0)","timestamp":"2025-02-28T16:17:30.344Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-02-28T16:17:51.854Z"}
+{"level":"info","message":"Password reset request received for: machinelearninglab3@gmail.com","timestamp":"2025-02-28T16:23:26.806Z"}
+{"level":"info","message":"Password reset token generated for machinelearninglab3@gmail.com: 6ea9a5d49249043e6fcb087b5f6ab701896c0566","timestamp":"2025-02-28T16:23:26.841Z"}
+{"level":"info","message":"Password reset email sent successfully to: machinelearninglab3@gmail.com","timestamp":"2025-02-28T16:23:30.696Z"}

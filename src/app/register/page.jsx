@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -16,6 +16,11 @@ const Register = () => {
   const [gender, setGender] = useState("");
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [passwordStrength, setPasswordStrength] = useState({
+    score: 0,
+    message: "",
+    color: ""
+  });
   const router = useRouter();
 
   // Get current date and subtract 10 years to set the max date
@@ -53,6 +58,55 @@ const Register = () => {
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+
+  // Password strength checker
+  useEffect(() => {
+    if (!password) {
+      setPasswordStrength({
+        score: 0,
+        message: "",
+        color: ""
+      });
+      return;
+    }
+
+    let score = 0;
+    const checks = {
+      length: password.length >= 8,
+      uppercase: /[A-Z]/.test(password),
+      lowercase: /[a-z]/.test(password),
+      number: /\d/.test(password),
+      special: /[!@#$%^&*(),.?":{}|<>]/.test(password)
+    };
+
+    // Calculate score based on checks
+    if (checks.length) score += 20;
+    if (checks.uppercase) score += 20;
+    if (checks.lowercase) score += 20;
+    if (checks.number) score += 20;
+    if (checks.special) score += 20;
+
+    // Determine strength message and color
+    let message = "";
+    let color = "";
+
+    if (score < 40) {
+      message = "Weak";
+      color = "bg-red-500";
+    } else if (score < 80) {
+      message = "Medium";
+      color = "bg-yellow-500";
+    } else {
+      message = "Strong";
+      color = "bg-green-500";
+    }
+
+    setPasswordStrength({
+      score,
+      message,
+      color
+    });
+  }, [password]);
 
   const validateForm = () => {
     if (!name || !email || !phoneNumber || !password || !confirmPassword || !dateOfBirth || !gender) {
@@ -155,7 +209,7 @@ const Register = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  placeholder="John Doe"
+                  placeholder="Your Full Name"
                   className="w-full pl-10 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                 />
               </div>
@@ -177,7 +231,7 @@ const Register = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  placeholder="john.doe@example.com"
+                  placeholder="abc@example.com"
                   className="w-full pl-10 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                 />
               </div>
@@ -199,7 +253,7 @@ const Register = () => {
                   value={phoneNumber}
                   onChange={handlePhoneChange}
                   required
-                  placeholder="123-456-7890"
+                  placeholder="01234567890"
                   className="w-full pl-10 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                 />
               </div>
@@ -282,9 +336,42 @@ const Register = () => {
                   )}
                 </button>
               </div>
-              <p className="text-xs text-gray-500 mt-1">
-                At least 8 characters required
-              </p>
+              
+              {/* Password Strength Indicator */}
+              {password && (
+                <div className="mt-2 space-y-1">
+                  <div className="h-1 w-full bg-gray-200 rounded-full overflow-hidden">
+                    <div 
+                      className={`h-full ${passwordStrength.color} transition-all duration-300 ease-in-out`} 
+                      style={{ width: `${passwordStrength.score}%` }}
+                    ></div>
+                  </div>
+                  <p className={`text-sm ${
+                    passwordStrength.message === "Weak" ? "text-red-600" : 
+                    passwordStrength.message === "Medium" ? "text-yellow-600" : 
+                    passwordStrength.message === "Strong" ? "text-green-600" : ""
+                  }`}>
+                    {passwordStrength.message && `Password strength: ${passwordStrength.message}`}
+                  </p>
+                  <ul className="text-xs text-gray-500 pl-4 list-disc space-y-1">
+                    <li className={password.length >= 8 ? "text-green-600" : ""}>
+                      At least 8 characters
+                    </li>
+                    <li className={/[A-Z]/.test(password) ? "text-green-600" : ""}>
+                      Contains uppercase letter
+                    </li>
+                    <li className={/[a-z]/.test(password) ? "text-green-600" : ""}>
+                      Contains lowercase letter
+                    </li>
+                    <li className={/\d/.test(password) ? "text-green-600" : ""}>
+                      Contains number
+                    </li>
+                    <li className={/[!@#$%^&*(),.?":{}|<>]/.test(password) ? "text-green-600" : ""}>
+                      Contains special character
+                    </li>
+                  </ul>
+                </div>
+              )}
             </div>
 
             {/* Confirm Password Field */}
