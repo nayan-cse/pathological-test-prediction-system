@@ -22,7 +22,7 @@ const Footer = () => {
           © 2025 Pathological Test Prediction. All rights reserved.
         </div>
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm">
-          <div>Developed by Nayan Malakar.</div>
+          <div>Developed by Nayan Malakar</div>
           <div>Supervised by Abu Rafe Md Jamil</div>
         </div>
       </div>

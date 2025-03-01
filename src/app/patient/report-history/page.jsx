@@ -109,7 +109,8 @@ export default function ReportHistory() {
       user_dob: calculateAge(reportData.user_dob), 
       user_gender: reportData.user_gender,
       symptoms: reportData.symptoms,
-      test_by_model: reportData.test_by_model,
+      // test_by_model: reportData.test_by_model,
+      test_by_doctor: reportData.test_by_doctor,
       approved_by_name: reportData.approved_by_name
     };
     
@@ -172,9 +173,9 @@ export default function ReportHistory() {
             </div>
 
             <div style="margin-bottom: 32px;">
-              <p style="font-weight: 600; font-size: 18px; color: #4b5563; border-bottom: 2px solid #9ca3af; padding-bottom: 4px;">Advice & Instructions:</p>
+              <p style="font-weight: 600; font-size: 18px; color: #4b5563; border-bottom: 2px solid #9ca3af; padding-bottom: 4px;">Advice (Pathological Test):</p>
               <div style="margin-top: 8px;">
-                <p>${patientData.test_by_model || "__________________"}</p>
+                <p>${patientData.test_by_doctor || "__________________"}</p>
                 <div style="border-bottom: 1px solid #d1d5db; height: 20px;"></div>
                 <div style="border-bottom: 1px solid #d1d5db; height: 20px;"></div>
               </div>

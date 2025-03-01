@@ -111,3 +111,28 @@
 {"level":"info","message":"Password reset request received for: machinelearninglab3@gmail.com","timestamp":"2025-02-28T16:23:26.806Z"}
 {"level":"info","message":"Password reset token generated for machinelearninglab3@gmail.com: 6ea9a5d49249043e6fcb087b5f6ab701896c0566","timestamp":"2025-02-28T16:23:26.841Z"}
 {"level":"info","message":"Password reset email sent successfully to: machinelearninglab3@gmail.com","timestamp":"2025-02-28T16:23:30.696Z"}
+{"level":"info","message":"Password reset request received for token: 6ea9a5d49249043e6fcb087b5f6ab701896c0566","timestamp":"2025-02-28T16:34:56.259Z"}
+{"level":"info","message":"Password successfully reset for user ID: 6","timestamp":"2025-02-28T16:34:56.380Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email machinelearninglab3@gmail.com","timestamp":"2025-02-28T18:15:39.639Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email machinelearninglab3@gmail.com","timestamp":"2025-02-28T18:15:46.828Z"}
+{"level":"info","message":"Password reset request received for: machinelearninglab3@gmail.com","timestamp":"2025-02-28T18:15:53.191Z"}
+{"level":"info","message":"Password reset token generated for machinelearninglab3@gmail.com: 88840ecdd697b18d82e0e6cb03bdab9bd3010450","timestamp":"2025-02-28T18:15:53.218Z"}
+{"level":"info","message":"Password reset email sent successfully to: machinelearninglab3@gmail.com","timestamp":"2025-02-28T18:15:57.319Z"}
+{"level":"info","message":"Password reset request received for token: 88840ecdd697b18d82e0e6cb03bdab9bd3010450","timestamp":"2025-02-28T18:16:36.308Z"}
+{"level":"info","message":"Password successfully reset for user ID: 6","timestamp":"2025-02-28T18:16:36.423Z"}
+{"level":"info","message":"User machinelearninglab3@gmail.com logged in successfully","timestamp":"2025-02-28T18:16:47.287Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-28T18:16:48.200Z"}
+{"level":"info","message":"Decoded Token: ID = 6, Role = patient","timestamp":"2025-02-28T18:16:48.218Z"}
+{"level":"info","message":"Verifying token","timestamp":"2025-02-28T18:16:55.336Z"}
+{"level":"info","message":"Token verified for user: 6, role: patient","timestamp":"2025-02-28T18:16:55.339Z"}
+{"level":"info","message":"Received symptoms: Itching","timestamp":"2025-02-28T18:16:55.340Z"}
+{"level":"info","message":"Forwarding request to Flask API: http://localhost:5000/predict","timestamp":"2025-02-28T18:16:55.340Z"}
+{"level":"info","message":"Predicted tests: Allergy Test,CBC,Liver Function Test","timestamp":"2025-02-28T18:16:56.895Z"}
+{"level":"info","message":"Inserting data into database","timestamp":"2025-02-28T18:16:56.895Z"}
+{"level":"info","message":"Data has been successfully saved.","timestamp":"2025-02-28T18:16:56.905Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T18:17:03.308Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T18:17:03.309Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T18:17:03.324Z"}
+{"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T18:17:03.336Z"}
+{"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T18:17:03.336Z"}
+{"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T18:17:03.338Z"}
