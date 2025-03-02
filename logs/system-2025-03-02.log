@@ -155,3 +155,96 @@
 {"level":"info","message":"Decoded Token: User ID = 1, Role = doctor","timestamp":"2025-03-02T08:29:36.194Z"}
 {"level":"info","message":"Fetching test reports for User ID: 1 (Page 1, Limit 50)","timestamp":"2025-03-02T08:29:36.194Z"}
 {"level":"info","message":"Successfully retrieved 13 test report(s) for User ID: 1 (Page 1/0)","timestamp":"2025-03-02T08:29:36.196Z"}
+{"level":"info","message":"Decoded Token: User ID = 1, Role = doctor","timestamp":"2025-03-02T08:29:42.853Z"}
+{"level":"info","message":"Fetching test reports for User ID: 1 (Page 1, Limit 50)","timestamp":"2025-03-02T08:29:42.853Z"}
+{"level":"info","message":"Successfully retrieved 13 test report(s) for User ID: 1 (Page 1/0)","timestamp":"2025-03-02T08:29:42.864Z"}
+{"level":"error","message":"JWT Verification Error: jwt expired","timestamp":"2025-03-02T11:27:59.915Z"}
+{"level":"info","message":"Admin with email admin@gmail.com registered successfully","timestamp":"2025-03-02T11:55:01.887Z"}
+{"level":"info","message":"User admin@gmail.com logged in successfully","timestamp":"2025-03-02T11:57:05.374Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = patient","timestamp":"2025-03-02T11:57:06.487Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = patient","timestamp":"2025-03-02T11:57:06.509Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = patient","timestamp":"2025-03-02T11:57:42.317Z"}
+{"level":"info","message":"User ID: 12 logged out successfully","timestamp":"2025-03-02T11:57:50.951Z"}
+{"level":"info","message":"User admin@gmail.com logged in successfully","timestamp":"2025-03-02T11:58:00.286Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T11:58:02.195Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T11:58:02.250Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T12:34:43.188Z"}
+{"level":"error","message":"Error verifying token: jwt expired","timestamp":"2025-03-02T13:00:05.085Z"}
+{"level":"error","message":"Logout failed: jwt expired","timestamp":"2025-03-02T13:00:11.727Z"}
+{"level":"info","message":"User admin@gmail.com logged in successfully","timestamp":"2025-03-02T13:00:32.934Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:00:33.418Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:00:33.448Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:00:40.199Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:00:40.214Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:04:38.270Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:04:43.066Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:05:53.365Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:06:57.130Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:08:35.624Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:09:45.463Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:14:26.934Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:14:35.963Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:15:17.276Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:18:34.314Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:19:47.714Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:21:42.093Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:26:05.930Z"}
+{"level":"error","message":"Error verifying token: Cannot destructure property 'startDate' of 'req.url.searchParams' as it is undefined.","timestamp":"2025-03-02T13:26:05.931Z"}
+{"level":"info","message":"User admin@gmail.com logged in successfully","timestamp":"2025-03-02T13:26:29.564Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:26:30.362Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:26:30.383Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:26:36.996Z"}
+{"level":"error","message":"Error verifying token: Cannot destructure property 'startDate' of 'req.url.searchParams' as it is undefined.","timestamp":"2025-03-02T13:26:36.997Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:26:37.012Z"}
+{"level":"error","message":"Error verifying token: Cannot destructure property 'startDate' of 'req.url.searchParams' as it is undefined.","timestamp":"2025-03-02T13:26:37.012Z"}
+{"level":"info","message":"User admin@gmail.com logged in successfully","timestamp":"2025-03-02T13:32:50.364Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:32:50.786Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:32:50.808Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:32:58.250Z"}
+{"level":"error","message":"Error verifying token: Cannot destructure property 'startDate' of 'req.url.searchParams' as it is undefined.","timestamp":"2025-03-02T13:32:58.252Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:32:58.311Z"}
+{"level":"error","message":"Error verifying token: Cannot destructure property 'startDate' of 'req.url.searchParams' as it is undefined.","timestamp":"2025-03-02T13:32:58.312Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:33:35.161Z"}
+{"level":"error","message":"Error verifying token: Cannot destructure property 'startDate' of 'req.url.searchParams' as it is undefined.","timestamp":"2025-03-02T13:33:35.162Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:35:11.388Z"}
+{"level":"error","message":"Error verifying token: Cannot destructure property 'startDate' of 'req.url.searchParams' as it is undefined.","timestamp":"2025-03-02T13:35:11.388Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:36:31.430Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:36:47.381Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:37:03.124Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:37:06.162Z"}
+{"level":"warn","message":"Report data not found","timestamp":"2025-03-02T13:37:06.164Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:39:05.885Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:39:05.924Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:40:26.568Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:40:44.881Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:40:54.696Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:41:00.297Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:41:05.883Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:41:10.003Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:41:11.700Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:42:56.691Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:43:51.756Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:49:42.831Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:49:44.175Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:49:45.798Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:49:47.092Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:52:33.244Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:52:33.247Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:53:51.292Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:53:57.212Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:54:07.109Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:56:55.300Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:57:02.024Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T13:58:08.424Z"}
+{"level":"info","message":"User ID: 12 logged out successfully","timestamp":"2025-03-02T13:58:39.519Z"}
+{"level":"info","message":"User admin@gmail.com logged in successfully","timestamp":"2025-03-02T15:19:45.079Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T15:19:45.964Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T15:19:45.994Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T15:21:16.152Z"}
+{"level":"info","message":"User ID: 12 logged out successfully","timestamp":"2025-03-02T15:23:08.600Z"}
+{"level":"info","message":"User admin@gmail.com logged in successfully","timestamp":"2025-03-02T15:23:16.167Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T15:23:16.590Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T15:23:16.614Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T15:32:56.110Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T15:33:18.660Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-02T15:33:37.623Z"}
