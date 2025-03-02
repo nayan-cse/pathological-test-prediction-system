@@ -39,8 +39,21 @@ export async function POST(req) {
             from: process.env.EMAIL_USER,
             to: email,
             subject: "Password Reset Request",
-            text: `Click the link to reset your password: http://localhost:3000/reset-password?token=${resetToken}`,
+            text: `Hello,
+        
+        We received a request to reset the password for your account associated with ${email}. To reset your password, please click the link below:
+        
+        http://localhost:3000/reset-password?token=${resetToken}
+        
+        If you did not request a password reset, please disregard this email. Your password will remain unchanged. 
+        
+        For security purposes, this link will expire in 1 hour. After that, you will need to request a new password reset.
+        
+        
+        Thank you,
+        The Support Team`,
         };
+        
 
         await transporter.sendMail(mailOptions);
         logger.info(`Password reset email sent successfully to: ${email}`);

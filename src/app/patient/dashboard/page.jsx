@@ -99,19 +99,6 @@ const PatientDashboard = () => {
                 </p>
               </div>
             </div>
-            <div>
-              <h2 className="text-xl font-medium text-gray-700">
-                Medical History
-              </h2>
-              <div className="mt-2">
-                <p className="text-gray-600">
-                  <strong>Last Appointment:</strong>{" "}
-                </p>
-                <p className="text-gray-600">
-                  <strong>Doctor's Notes:</strong>
-                </p>
-              </div>
-            </div>
           </div>
         </div>
         <LogoutButton />

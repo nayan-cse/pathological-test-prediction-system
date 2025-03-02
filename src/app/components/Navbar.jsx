@@ -71,7 +71,7 @@ const Navbar = () => {
                       href="/patient/make-report"
                       className="text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out"
                     >
-                      Make an Appointment
+                      Make a Report
                     </Link>
                   </>
                 )}

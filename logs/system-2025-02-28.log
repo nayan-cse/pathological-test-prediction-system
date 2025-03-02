@@ -136,3 +136,5 @@
 {"level":"info","message":"Decoded Token: User ID = 6, Role = patient","timestamp":"2025-02-28T18:17:03.336Z"}
 {"level":"info","message":"Fetching test reports for User ID: 6 (Page 1, Limit 10)","timestamp":"2025-02-28T18:17:03.336Z"}
 {"level":"info","message":"Successfully retrieved 10 test report(s) for User ID: 6 (Page 1/2)","timestamp":"2025-02-28T18:17:03.338Z"}
+{"level":"error","message":"JWT Verification Error: jwt expired","timestamp":"2025-02-28T19:44:02.668Z"}
+{"level":"error","message":"JWT Verification Error: jwt expired","timestamp":"2025-02-28T19:44:02.687Z"}
