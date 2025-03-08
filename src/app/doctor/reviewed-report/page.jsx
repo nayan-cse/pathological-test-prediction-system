@@ -37,7 +37,7 @@ export default function ReviewedReport() {
   };
 
   const updateUrlParams = (page, limit) => {
-    const params = new URLSearchParams();
+    const params = new URLSearchParams(searchParams.toString());
     params.set('page', page.toString());
     params.set('limit', limit.toString());
     router.push(`?${params.toString()}`);
@@ -67,13 +67,35 @@ export default function ReviewedReport() {
       const result = await response.json();
 
       if (response.ok) {
-        setResponseData(result.data);
-        setPagination(result.pagination);
-        setError(null);
+        // Check if data exists and is an array
+        if (result.data && Array.isArray(result.data)) {
+          setResponseData(result.data);
+          setPagination(result.pagination);
+          setError(null);
+        } else {
+          // Handle empty data case
+          setResponseData([]);
+          setPagination(result.pagination || {
+            currentPage: page,
+            totalPages: 0,
+            total: 0,
+            limit: itemsPerPage,
+            hasNextPage: false,
+            hasPrevPage: false
+          });
+          setError("No reports found");
+          showToast('info', "No reports found");
+        }
       } else {
         setError(result.error || 'No Report Request available');
-        setResponseData(null);
+        setResponseData([]);
         showToast('error', result.error || 'No Report Request available');
+        
+        // If we get a 404 for a page that doesn't exist, but there are other pages,
+        // redirect to page 1
+        if (response.status === 404 && result.pagination && result.pagination.totalPages > 0) {
+          updateUrlParams(1, itemsPerPage);
+        }
       }
     } catch (err) {
       console.error("Error during request:", err);
@@ -95,11 +117,22 @@ export default function ReviewedReport() {
   }, [currentPage, limit]);
 
   const calculateAge = (dob) => {
+    if (!dob) return "Not provided";
+    
     const birthDate = new Date(dob);
     const today = new Date();
+    
+    // Validate the date
+    if (isNaN(birthDate.getTime())) return "Invalid date";
+    
     const years = today.getFullYear() - birthDate.getFullYear();
     const months = today.getMonth() - birthDate.getMonth();
-    return `${years} years, ${months < 0 ? 12 + months : months} months`;
+    
+    // Adjust years if birth month hasn't occurred yet this year
+    const adjustedYears = months < 0 ? years - 1 : years;
+    const adjustedMonths = months < 0 ? 12 + months : months;
+    
+    return `${adjustedYears} years, ${adjustedMonths} months`;
   };
 
   const changePage = (page) => {
@@ -110,6 +143,9 @@ export default function ReviewedReport() {
 
   const renderPageButtons = () => {
     const { currentPage, totalPages } = pagination;
+    
+    if (totalPages <= 0) return null;
+    
     const buttons = [];
     const pagesToShow = new Set([1, totalPages, currentPage, currentPage - 1, currentPage + 1]);
     const validPages = Array.from(pagesToShow).filter(p => p >= 1 && p <= totalPages).sort((a, b) => a - b);
@@ -162,7 +198,7 @@ export default function ReviewedReport() {
       )}
       
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-800 text-center mb-6">Report History</h1>
+        <h1 className="text-3xl font-bold text-gray-800 text-center mb-6">Reviewed Reports History</h1>
 
         {loading && 
           <div className="flex justify-center items-center p-4">
@@ -171,18 +207,18 @@ export default function ReviewedReport() {
           </div>
         }
 
-        {error && 
+        {error && !loading && !responseData?.length && 
           <div className="bg-red-50 p-4 rounded-lg border border-red-200 text-red-600 text-center mb-4">
             {error}
           </div>
         }
 
-        {responseData && (
+        {Array.isArray(responseData) && (
           <>
             <div className="bg-white p-4 rounded-lg shadow mb-4 flex justify-between items-center">
               <div>
                 <span className="text-gray-600">
-                  Showing {responseData.length} of {pagination.total} reports
+                  Showing {responseData.length} of {pagination.total || 0} reports
                 </span>
               </div>
               <div className="flex items-center space-x-2">
@@ -201,42 +237,48 @@ export default function ReviewedReport() {
               </div>
             </div>
 
-            <div className="overflow-x-auto shadow-lg rounded-lg border border-gray-200">
-              <table className="min-w-full bg-white table-auto">
-                <thead className="bg-blue-600 text-white">
-                  <tr>
-                    <th className="py-3 px-4 text-left">SL</th>
-                    <th className="py-3 px-4 text-left">Name</th>
-                    <th className="py-3 px-4 text-left">Age</th>
-                    <th className="py-3 px-4 text-left">Gender</th>
-                    <th className="py-3 px-4 text-left">Symptoms Reported</th>
-                    <th className="py-3 px-4 text-left">Test Given</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {responseData.map((item, index) => {
-                    const realIndex = (pagination.currentPage - 1) * pagination.limit + index + 1;
-                    return (
-                      <tr key={index} className="border-t hover:bg-gray-50">
-                        <td className="py-3 px-4">{realIndex}</td>
-                        <td className="py-3 px-4">{item.user_name}</td>
-                        <td className="py-3 px-4">{calculateAge(item.user_dob)}</td>
-                        <td className="py-3 px-4">{item.user_gender}</td>
-                        <td className="py-3 px-4">{item.symptoms}</td>
-                        <td className="py-3 px-4">{item.test_by_doctor}</td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
+            {responseData.length > 0 ? (
+              <div className="overflow-x-auto shadow-lg rounded-lg border border-gray-200">
+                <table className="min-w-full bg-white table-auto">
+                  <thead className="bg-blue-600 text-white">
+                    <tr>
+                      <th className="py-3 px-4 text-left">SL</th>
+                      <th className="py-3 px-4 text-left">Name</th>
+                      <th className="py-3 px-4 text-left">Age</th>
+                      <th className="py-3 px-4 text-left">Gender</th>
+                      <th className="py-3 px-4 text-left">Symptoms Reported</th>
+                      <th className="py-3 px-4 text-left">Test Given</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {responseData.map((item, index) => {
+                      const realIndex = (pagination.currentPage - 1) * pagination.limit + index + 1;
+                      return (
+                        <tr key={item.id || index} className="border-t hover:bg-gray-50">
+                          <td className="py-3 px-4">{realIndex}</td>
+                          <td className="py-3 px-4">{item.user_name || "N/A"}</td>
+                          <td className="py-3 px-4">{calculateAge(item.user_dob)}</td>
+                          <td className="py-3 px-4">{item.user_gender || "N/A"}</td>
+                          <td className="py-3 px-4">{item.symptoms || "N/A"}</td>
+                          <td className="py-3 px-4">{item.test_by_doctor || "N/A"}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            ) : (
+              <div className="bg-white p-8 rounded-lg shadow text-center">
+                <p className="text-gray-600">No reviewed reports found</p>
+              </div>
+            )}
 
             {pagination.totalPages > 1 && (
               <div className="flex justify-center items-center mt-4">
                 <button 
-                  onClick={() => changePage(currentPage - 1)}
+                  onClick={() => changePage(pagination.currentPage - 1)}
                   disabled={!pagination.hasPrevPage}
-                  className={`px-4 py-2 ${!pagination.hasPrevPage ? 'bg-gray-400' : 'bg-blue-600 hover:bg-blue-700'} text-white rounded-l`}
+                  className={`px-4 py-2 ${!pagination.hasPrevPage ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'} text-white rounded-l`}
                 >
                   Prev
                 </button>
@@ -244,9 +286,9 @@ export default function ReviewedReport() {
                 {renderPageButtons()}
                 
                 <button 
-                  onClick={() => changePage(currentPage + 1)}
+                  onClick={() => changePage(pagination.currentPage + 1)}
                   disabled={!pagination.hasNextPage}
-                  className={`px-4 py-2 ${!pagination.hasNextPage ? 'bg-gray-400' : 'bg-blue-600 hover:bg-blue-700'} text-white rounded-r`}
+                  className={`px-4 py-2 ${!pagination.hasNextPage ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'} text-white rounded-r`}
                 >
                   Next
                 </button>

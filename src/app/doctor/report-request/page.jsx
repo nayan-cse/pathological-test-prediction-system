@@ -5,7 +5,6 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { RefreshCw, CheckCircle, Edit, ChevronLeft, ChevronRight, X, Search } from "lucide-react";
 
 export default function ReportRequest() {
-  // ... keep all the existing state variables
   const [responseData, setResponseData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
