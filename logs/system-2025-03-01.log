@@ -95,3 +95,4 @@
 {"level":"info","message":"User ID: 6 logged out successfully","timestamp":"2025-03-01T06:25:36.640Z"}
 {"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-03-01T06:25:41.062Z"}
 {"level":"warn","message":"Login failed: Incorrect password for email johndoe@example.com","timestamp":"2025-03-01T07:24:36.801Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email machinelearninglab3@gmail.com","timestamp":"2025-03-01T16:51:39.187Z"}

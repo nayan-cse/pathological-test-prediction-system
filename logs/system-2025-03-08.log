@@ -103,3 +103,12 @@
 {"level":"info","message":"Decoded Token: User ID = 1, Role = doctor","timestamp":"2025-03-08T15:38:20.462Z"}
 {"level":"info","message":"Fetching reviewed reports for Doctor ID: 1 (Page 3, Limit 5)","timestamp":"2025-03-08T15:38:20.462Z"}
 {"level":"info","message":"Successfully retrieved 5 reviewed report(s) for Doctor ID: 1 (Page 3/4)","timestamp":"2025-03-08T15:38:20.464Z"}
+{"level":"info","message":"User ID: 1 logged out successfully","timestamp":"2025-03-08T15:38:36.155Z"}
+{"level":"warn","message":"Login failed: Incorrect password for email admin@gmail.com","timestamp":"2025-03-08T15:42:18.334Z"}
+{"level":"info","message":"User admin@gmail.com logged in successfully","timestamp":"2025-03-08T15:42:25.780Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-08T15:42:27.512Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-08T15:42:27.615Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-08T15:42:58.783Z"}
+{"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-08T15:43:04.266Z"}
+{"level":"info","message":"User admin@gmail.com logged in successfully","timestamp":"2025-03-08T15:56:40.655Z"}
+{"level":"error","message":"Login failed: Email or password missing","timestamp":"2025-03-08T15:57:46.745Z"}
