@@ -1,11 +1,11 @@
-
 'use client';
 
 import React, { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { RefreshCw, CheckCircle, Edit, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { RefreshCw, CheckCircle, Edit, ChevronLeft, ChevronRight, X, Search } from "lucide-react";
 
 export default function ReportRequest() {
+  // ... keep all the existing state variables
   const [responseData, setResponseData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -17,15 +17,38 @@ export default function ReportRequest() {
     hasNextPage: false,
     hasPrevPage: false
   });
-
-  // Toast state
   const [toast, setToast] = useState(null);
-
-  // State for modals
   const [isApproveModalOpen, setIsApproveModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [selectedReport, setSelectedReport] = useState(null);
   const [editedTest, setEditedTest] = useState("");
+
+  // New state for test selection
+  const [availableTests, setAvailableTests] = useState([
+    "ANA", "ANA (Antinuclear Antibody)", "Abdominal Ultrasound (USG Abdomen)",
+    "Allergy Test", "Amylase/Lipase", "Bilirubin Test", "Blood Culture",
+    "Blood Glucose Test", "Blood Pressure Monitoring", "Bone Scan", "CBC",
+    "CPK (Creatine Phosphokinase)", "CRP", "CT Scan Head", "CT/MRI",
+    "CT/MRI Head", "Calcium Test", "Chest X-Ray", "Colonoscopy", "Cortisol",
+    "D-Dimer", "Dengue Test", "Doppler Ultrasound", "ECG", "ESR",
+    "Electrolyte Panel", "Electromyography (EMG)", "Endoscopy",
+    "Endoscopy (if persistent)", "Eye Examination", "Ferritin", "Genetic Testing",
+    "HIV Test", "HbA1c", "Hepatitis B and C Tests", "Hormone Profile",
+    "IgE (Immunoglobulin E)", "Iron Studies", "Kidney Function Test",
+    "Lipid Profile", "Liver Function Test", "Lymph Node Biopsy", "MRI",
+    "MRI Brain", "MRI Hip", "MRI Knee", "MRI Neck", "MRI Spine",
+    "Malaria Antigen Test", "Nerve Conduction Study", "PT/INR",
+    "Pelvic Ultrasound", "Peripheral Blood Flow Studies", "Platelet Count",
+    "Rheumatoid Factor", "Rheumatoid Factor (RF)", "Skin Biopsy",
+    "Skin Examination", "Skin Swab Culture", "Sputum Culture", "Stool Culture",
+    "Stool Occult Blood Test", "Stool Test", "TSH (Thyroid Stimulating Hormone)",
+    "Throat Swab Culture", "Thyroid Panel", "Total Bilirubin", "Troponin",
+    "USG Abdomen", "Ultrasound", "Ultrasound of Thyroid", "Urine Culture",
+    "Urine RME", "VDRL", "Vitamin B12 Test", "X-Ray", "X-Ray Hip",
+    "X-Ray Knee", "X-Ray Neck", "X-Ray Spine"
+  ]);
+  const [selectedTests, setSelectedTests] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -33,11 +56,9 @@ export default function ReportRequest() {
   const currentPage = parseInt(searchParams.get('page') || '1');
   const limit = parseInt(searchParams.get('limit') || '10');
 
-  // Custom toast implementation
+  // Keep all the existing functions
   const showToast = (type, message) => {
     setToast({ type, message });
-    
-    // Auto-dismiss after 3 seconds
     setTimeout(() => {
       setToast(null);
     }, 3000);
@@ -95,7 +116,6 @@ export default function ReportRequest() {
   useEffect(() => {
     handleGet(currentPage, limit);
     
-    // Clear any toast when component unmounts
     return () => {
       setToast(null);
     };
@@ -144,7 +164,7 @@ export default function ReportRequest() {
 
   const handleLimitChange = (e) => {
     const newLimit = parseInt(e.target.value);
-    updateUrlParams(1, newLimit); // Reset to page 1 when changing limit
+    updateUrlParams(1, newLimit);
   };
 
   // Approve functionality
@@ -186,7 +206,7 @@ export default function ReportRequest() {
       if (response.ok) {
         setIsApproveModalOpen(false);
         showToast('success', "Report approved successfully!");
-        handleGet(currentPage, limit); // Refresh the report list after approval
+        handleGet(currentPage, limit);
       } else {
         console.error("Error during approval:", result.error);
         showToast('error', result.error || "Failed to approve report");
@@ -197,9 +217,17 @@ export default function ReportRequest() {
     }
   };
 
-  // Edit functionality
+  // Modified Edit functionality
   const handleEdit = (item) => {
     setSelectedReport(item);
+    
+    // Parse the existing tests from test_by_model
+    const existingTests = item.test_by_model
+      .split(',')
+      .map(test => test.trim())
+      .filter(test => test.length > 0);
+      
+    setSelectedTests(existingTests);
     setEditedTest(item.test_by_model);
     setIsEditModalOpen(true);
   };
@@ -216,10 +244,13 @@ export default function ReportRequest() {
     const userId = localStorage.getItem("userId");
     const { id } = selectedReport;
 
+    // Convert the selectedTests array to a comma-separated string
+    const updatedTestByModel = selectedTests.join(', ');
+
     const bodyData = {
       reportId: id,
       approvedBy: userId,
-      testByModel: editedTest,
+      testByModel: updatedTestByModel,
     };
 
     try {
@@ -237,7 +268,7 @@ export default function ReportRequest() {
       if (response.ok) {
         setIsEditModalOpen(false);
         showToast('success', "Report updated successfully!");
-        handleGet(currentPage, limit); // Refresh the report list after edit
+        handleGet(currentPage, limit);
       } else {
         console.error("Error during edit:", result.error);
         showToast('error', result.error || "Failed to update report");
@@ -248,6 +279,24 @@ export default function ReportRequest() {
     }
   };
 
+  // New function to handle checkbox changes
+  const handleTestChange = (test) => {
+    setSelectedTests(prev => {
+      if (prev.includes(test)) {
+        // If already selected, remove it
+        return prev.filter(t => t !== test);
+      } else {
+        // If not selected, add it
+        return [...prev, test];
+      }
+    });
+  };
+
+  // Function to filter tests based on search query
+  const filteredTests = availableTests.filter(test => 
+    test.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   // Handle modal close functions
   const handleCloseApproveModal = () => {
     setIsApproveModalOpen(false);
@@ -257,7 +306,9 @@ export default function ReportRequest() {
   const handleCloseEditModal = () => {
     setIsEditModalOpen(false);
     setSelectedReport(null);
+    setSelectedTests([]);
     setEditedTest("");
+    setSearchQuery("");
   };
 
   // Close toast manually
@@ -442,10 +493,10 @@ export default function ReportRequest() {
           </div>
         )}
 
-        {/* Edit Modal */}
+        {/* Enhanced Edit Modal with checkboxes */}
         {isEditModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="bg-white rounded-lg p-6 w-full max-w-md">
+            <div className="bg-white rounded-lg p-6 w-full max-w-2xl max-h-screen overflow-hidden flex flex-col">
               <div className="flex justify-between items-center mb-4">
                 <h3 className="text-xl font-bold text-gray-800">Edit Test Information</h3>
                 <button onClick={handleCloseEditModal} className="text-gray-500 hover:text-gray-700">
@@ -454,14 +505,57 @@ export default function ReportRequest() {
               </div>
               
               <div className="mb-4">
-                <label htmlFor="testByModel" className="block text-gray-700 mb-2">Test Recommendation:</label>
-                <textarea
-                  id="testByModel"
-                  value={editedTest}
-                  onChange={(e) => setEditedTest(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  rows="4"
-                ></textarea>
+                <p className="font-medium text-gray-700">Selected Tests: {selectedTests.length}</p>
+                {selectedTests.length > 0 && (
+                  <div className="mt-2 p-3 bg-blue-50 rounded-md max-h-32 overflow-y-auto">
+                    <p className="text-sm text-blue-800">{selectedTests.join(', ')}</p>
+                  </div>
+                )}
+              </div>
+              
+              <div className="mb-4 relative">
+                <div className="flex items-center border border-gray-300 rounded-md p-2 focus-within:ring-2 focus-within:ring-blue-500">
+                  <Search size={20} className="text-gray-400 mr-2" />
+                  <input
+                    type="text"
+                    placeholder="Search tests..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full focus:outline-none"
+                  />
+                  {searchQuery && (
+                    <button 
+                      onClick={() => setSearchQuery('')}
+                      className="text-gray-400 hover:text-gray-600"
+                    >
+                      <X size={16} />
+                    </button>
+                  )}
+                </div>
+              </div>
+              
+              <div className="flex-1 overflow-y-auto border border-gray-200 rounded-md p-2 mb-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                  {filteredTests.map((test, index) => (
+                    <div key={index} className="flex items-center p-2 rounded hover:bg-gray-50">
+                      <input
+                        type="checkbox"
+                        id={`test-${index}`}
+                        checked={selectedTests.includes(test)}
+                        onChange={() => handleTestChange(test)}
+                        className="h-5 w-5 text-blue-600 rounded"
+                      />
+                      <label htmlFor={`test-${index}`} className="ml-2 cursor-pointer flex-1">
+                        {test}
+                      </label>
+                    </div>
+                  ))}
+                </div>
+                {filteredTests.length === 0 && (
+                  <div className="p-4 text-center text-gray-500">
+                    No tests found matching your search
+                  </div>
+                )}
               </div>
               
               <div className="flex justify-end space-x-3">
