@@ -112,3 +112,36 @@
 {"level":"info","message":"Decoded Token: ID = 12, Role = admin","timestamp":"2025-03-08T15:43:04.266Z"}
 {"level":"info","message":"User admin@gmail.com logged in successfully","timestamp":"2025-03-08T15:56:40.655Z"}
 {"level":"error","message":"Login failed: Email or password missing","timestamp":"2025-03-08T15:57:46.745Z"}
+{"level":"info","message":"User 190126.cse@student.just.edu.bd logged in successfully","timestamp":"2025-03-08T16:02:28.770Z"}
+{"level":"info","message":"User ID: 12 logged out successfully","timestamp":"2025-03-08T16:30:17.232Z"}
+{"level":"info","message":"User 190126.cse@student.just.edu.bd logged in successfully","timestamp":"2025-03-08T16:31:23.993Z"}
+{"level":"info","message":"Decoded Token: ID = 15, Role = doctor","timestamp":"2025-03-08T16:31:24.998Z"}
+{"level":"info","message":"Decoded Token: ID = 15, Role = doctor","timestamp":"2025-03-08T16:31:25.022Z"}
+{"level":"info","message":"Decoded Token: User ID = 15, Role = doctor","timestamp":"2025-03-08T16:31:40.417Z"}
+{"level":"info","message":"Fetching test reports for User ID: 15 (Page 1, Limit 10)","timestamp":"2025-03-08T16:31:40.418Z"}
+{"level":"info","message":"Successfully retrieved 4 test report(s) for User ID: 15 (Page 1/0)","timestamp":"2025-03-08T16:31:40.432Z"}
+{"level":"info","message":"Decoded Token: User ID = 15, Role = doctor","timestamp":"2025-03-08T16:31:40.446Z"}
+{"level":"info","message":"Fetching test reports for User ID: 15 (Page 1, Limit 10)","timestamp":"2025-03-08T16:31:40.446Z"}
+{"level":"info","message":"Successfully retrieved 4 test report(s) for User ID: 15 (Page 1/0)","timestamp":"2025-03-08T16:31:40.449Z"}
+{"level":"info","message":"Decoded Token: User ID = 15, Role = doctor","timestamp":"2025-03-08T16:31:44.667Z"}
+{"level":"info","message":"Fetching reviewed reports for Doctor ID: 15 (Page 1, Limit 10)","timestamp":"2025-03-08T16:31:44.667Z"}
+{"level":"info","message":"No reviewed reports found for Doctor ID: 15 on page 1","timestamp":"2025-03-08T16:31:44.677Z"}
+{"level":"info","message":"Decoded Token: User ID = 15, Role = doctor","timestamp":"2025-03-08T16:31:44.687Z"}
+{"level":"info","message":"Fetching reviewed reports for Doctor ID: 15 (Page 1, Limit 10)","timestamp":"2025-03-08T16:31:44.687Z"}
+{"level":"info","message":"No reviewed reports found for Doctor ID: 15 on page 1","timestamp":"2025-03-08T16:31:44.688Z"}
+{"level":"info","message":"Decoded Token: User ID = 15, Role = doctor","timestamp":"2025-03-08T16:31:53.198Z"}
+{"level":"info","message":"Fetching test reports for User ID: 15 (Page 1, Limit 10)","timestamp":"2025-03-08T16:31:53.198Z"}
+{"level":"info","message":"Successfully retrieved 4 test report(s) for User ID: 15 (Page 1/0)","timestamp":"2025-03-08T16:31:53.205Z"}
+{"level":"info","message":"Decoded Token: User ID = 15, Role = doctor","timestamp":"2025-03-08T16:31:53.218Z"}
+{"level":"info","message":"Fetching test reports for User ID: 15 (Page 1, Limit 10)","timestamp":"2025-03-08T16:31:53.219Z"}
+{"level":"info","message":"Successfully retrieved 4 test report(s) for User ID: 15 (Page 1/0)","timestamp":"2025-03-08T16:31:53.221Z"}
+{"level":"info","message":"Report ID 10 updated and approved by Doctor ID 15","timestamp":"2025-03-08T16:32:03.689Z"}
+{"level":"info","message":"Decoded Token: User ID = 15, Role = doctor","timestamp":"2025-03-08T16:32:03.705Z"}
+{"level":"info","message":"Fetching test reports for User ID: 15 (Page 1, Limit 10)","timestamp":"2025-03-08T16:32:03.706Z"}
+{"level":"info","message":"Successfully retrieved 3 test report(s) for User ID: 15 (Page 1/0)","timestamp":"2025-03-08T16:32:03.708Z"}
+{"level":"info","message":"Decoded Token: User ID = 15, Role = doctor","timestamp":"2025-03-08T16:32:08.107Z"}
+{"level":"info","message":"Fetching reviewed reports for Doctor ID: 15 (Page 1, Limit 10)","timestamp":"2025-03-08T16:32:08.109Z"}
+{"level":"info","message":"Successfully retrieved 1 reviewed report(s) for Doctor ID: 15 (Page 1/1)","timestamp":"2025-03-08T16:32:08.111Z"}
+{"level":"info","message":"Decoded Token: User ID = 15, Role = doctor","timestamp":"2025-03-08T16:32:08.125Z"}
+{"level":"info","message":"Fetching reviewed reports for Doctor ID: 15 (Page 1, Limit 10)","timestamp":"2025-03-08T16:32:08.125Z"}
+{"level":"info","message":"Successfully retrieved 1 reviewed report(s) for Doctor ID: 15 (Page 1/1)","timestamp":"2025-03-08T16:32:08.127Z"}
